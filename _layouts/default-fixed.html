@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<html>
+
+  {% include head.html %}
+
+  {% if page.skin == 'dark' %}
+  <body class="dark header-fixed">
+  {% else %}
+  <body class="header-fixed">
+  {% endif %}
+    <div class="wrapper">
+
+      {% include header.html %}
+      {% if page.slider %}
+        {% include slider/{{ page.slider }}.html %}
+      {% endif %}
+
+      {{ content }}
+
+      {% include footer-v1.html %}
+      {% include scripts.html %}
+
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,74 @@
+---
+layout: unify-v4
+gallery: fancybox
+title: Ubud &amp; Bali
+id: gallery2
+---
+
+  <!--where images are located, cdn or path-->
+  {% assign cdn = "https://djzer6zmwwglx.cloudfront.net/gallery3" %}
+
+  <!--Gallery description-->
+  {% capture desc %}
+    Take a journey through the local area and discover the beauty and majesty
+    that is Bali. Home to Jalan Cinta Sanctuary.
+  {% endcapture %}
+
+  <!--Filename of gallery images-->
+  <!--NOTE: See above for making proper assignments-->
+
+  {% assign images = "river2s.jpg:ridges.jpg:ridge2s.jpg" %}
+  {% assign images = {{images | append: ",ridge-walks.jpg:ridge-walk3s.jpg"}} %}
+  {% assign images = {{images | append: ",ridge-grasss.jpg:ridge-grass3s.jpg:ridge-grass4s.jpg"}} %}
+  {% assign images = {{images | append: ",ridge-grass6s.jpg:duckss.jpg"}} %}
+  {% assign images = {{images | append: ",mt-agung2s.jpg:rice-fields2s.jpg:mountainss.jpg"}} %}
+  {% assign images = {{images | append: ",sunsets.jpg:roads.jpg"}} %}
+  {% assign images = {{images | append: ",ceremonys.jpg:ceremony2s.jpg:ceremony3s.jpg"}} %}
+
+  {% comment %}
+  <!--removed: temples.jgp-->
+  {% assign images = {{images | append: ",temples.jpg:fountains.jpg"}} %}
+  {% endcomment %}
+  {% assign images = {{images | append: ",foods.jpg:fountains.jpg"}} %}
+
+  {% assign images = {{images | append: ",bali-dancerss.jpg:bali-dances.jpg:childrens.jpg"}} %}
+  {% assign images = {{images | append: ",flowers4s.jpg:children2s.jpg"}} %}
+  {% assign images = {{images | append: ",ogah-childrens.jpg:fruits.jpg:foods.jpg"}} %}
+  {% assign images = {{images | append: ",coconuts.jpg:candi-dasas.jpg"}} %}
+  {% assign images = {{images | append: ",mt-agungs.jpg:mt-baturs.jpg:rice-fieldss.jpg"}} %}
+  {% assign images = {{images | append: ",river3s.jpg:temple2s.jpg"}} %}
+  {% assign images = {{images | append: ",mforrests.jpg:monkeys.jpg:sunset-ws.jpg"}} %}
+
+  <!--added-->
+  {% assign images = {{images | append: ",gallery-food.jpg:water-temple.jpg:"}} %}
+
+  {% assign info = "The Wos River in Ubud:Walk from Ubud to the Sanctuary:Home of the 'Miracle Walk'" %}
+  {% assign info = {{info | append: ";The Ridge Walk, an icon in Ubud.:Preparing for work!"}} %}
+  {% assign info = {{info | append: ";Harvesting for grass roofs.:Preparing grass for transport.:Off to market."}} %}
+  {% assign info = {{info | append: ";Some sites along the walk.:More sites along the walk."}} %}
+  {% assign info = {{info | append: ";Mt Agung, just outside our door.:There she is again, Mt Agung.:View from the end of the street."}} %}
+  {% assign info = {{info | append: ";End of the day.:Anyone for a motorbike tour of the island?"}} %}
+  {% assign info = {{info | append: ";A culture all it's own.:Marching band, Bali style.:Ceremony abounds."}} %}
+
+  {% comment %}
+  <!--removed first caption-->
+  {% assign info = {{info | append: ";With temples on every corner.:Water temple near Ubud."}} %}
+  {% endcomment %}
+
+  {% assign info = {{info | append: ";Nasi Kuning, yum.:Water temple near Ubud."}} %}
+
+  {% assign info = {{info | append: ";Enchanting dance performances.:Performing history.:Stunning creativity everywhere."}} %}
+  {% assign info = {{info | append: ";Innocence!:Curiosity!"}} %}
+  {% assign info = {{info | append: ";... and play!:Lots of tropical fruit.:Scrumptious food."}} %}
+  {% assign info = {{info | append: ";and fresh coconuts!:Places to go, like Candidasa."}} %}
+  {% assign info = {{info | append: ";Up to the mountains.:Above the clouds.:Terraced rice fields."}} %}
+  {% assign info = {{info | append: ";Rambling rivers.:Complete with temples, temples, and more temples."}} %}
+  {% assign info = {{info | append: ";The Monkey Forest.:Complete with monkeys!:Overall, the stunning beauty that is Bali."}} %}
+
+  <!--added-->
+  {% assign info = {{info | append: ";Fantastic treats.:Pura Tirta Empul, the water temple.:"}} %}
+
+
+  <!--Include fancybox passing parameters-->
+  {% include gallery/fancybox.html desc=desc images=images cdn=cdn i=info %}
+

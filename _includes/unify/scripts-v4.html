@@ -1,0 +1,46 @@
+<script type="text/javascript" src="public/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="public/plugins/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="public/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="public/plugins/back-to-top.js"></script>
+<script type="text/javascript" src="public/plugins/smoothScroll.js"></script>
+<!-- <script type="text/javascript" src="public/plugins/jquery.parallax.js"></script> -->
+{% if page.gallery %}
+  {% include gallery/{{page.gallery}}.js %}
+{% endif %}
+{% if page.banner == "gmap" %}
+  {% include map/{{page.banner}}.js %}
+{% endif %}
+{% if page.backstretch %}
+  {% include backstretch/{{page.backstretch | append: ".js" }} %}
+{% endif %}
+{% if page.form %}
+  {% include form/{{page.form}}.js %}
+{% endif %}
+
+<script src="https://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+<script type="text/javascript" src="public/js/contact.js"></script>
+
+<!-- JS Customization -->
+<script type="text/javascript" src="public/js/custom.js"></script>
+
+<!-- JS Page Level -->
+<script type="text/javascript" src="public/js/app.js"></script>
+<script type="text/javascript" src="public/js/jcs.js"></script>
+<script type="text/javascript">
+  jQuery(document).ready(function() {
+    App.init();
+    {% if page.gallery %}
+      {% include gallery/{{page.gallery}}.init %}
+    {% endif %}
+    {% if page.banner == "gmap" %}
+      {% include map/{{page.banner}}.init %}
+    {% endif %}
+  });
+</script>
+<!--[if lt IE 9]>
+    <script src="public/plugins/respond.js"></script>
+    <script src="public/plugins/html5shiv.js"></script>
+    <script src="public/plugins/placeholder-IE-fixes.js"></script>
+<![endif]-->
+

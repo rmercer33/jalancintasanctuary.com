@@ -1,0 +1,14 @@
+---
+layout: unify-v4
+---
+
+  {% if page.banner == "slider-v2" %}
+    {% include slider/slider-v2.html %}
+  {% elsif page.banner == "gmap" %}
+    {% include map/gmap.html %}
+  {% endif %}
+
+  <div class="container content-md">
+    {{ content }}
+  </div>
+

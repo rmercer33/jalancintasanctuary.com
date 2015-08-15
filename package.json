@@ -1,0 +1,22 @@
+{
+  "name": "jcs.com",
+  "version": "1.0.0",
+  "description": "Jalan Cinta Sanctuary Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jcs",
+    "jekyll"
+  ],
+  "author": "Rick Mercer",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-aws-s3": "^0.14.0",
+    "grunt-exec": "^0.4.6",
+    "grunt-preprocess": "^5.0.1",
+    "jit-grunt": "^0.9.1"
+  }
+}

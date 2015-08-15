@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  {% include unify/head-v4.html %}
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="header-v4">
+    {% include unify/navbar-v4.html %}
+  </div>
+  {% include slider/slider-v2.html %}
+
+  {% comment %}
+    <!--not ready for prime time-->
+    {% include unify/breadcrumbs.html %}
+  {% endcomment %}
+  {% if page.title %}
+    <div class="heading heading-v4 jcs-page-heading margin-bottom-20">
+      <h2>{{ page.title }}</h2>
+    </div>
+  {% endif %}
+
+    <!-- <div class="breadcrumbs"> -->
+    <!--   <div class="container"> -->
+    <!--     <h1 class="pull-left"> -->
+    <!--       {{page.title}} -->
+    <!--     </h1> -->
+    <!--   </div> -->
+    <!-- </div> -->
+
+  {{content}}
+
+  <div class="footer-default">
+    {% include unify/footer.html %}
+  </div>
+</div><!--/wrapper-->
+
+<!-- JS Global Compulsory -->
+{% include unify/scripts-v4.html %}
+
+</body>
+</html>

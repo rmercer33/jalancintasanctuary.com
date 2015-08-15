@@ -1,0 +1,12 @@
+rick/
+_site/
+_templates/
+_sass/
+contact.html
+css/
+icons/
+node_modules/
+aws-keys.json
+.*
+*.swp
+!.gitignore

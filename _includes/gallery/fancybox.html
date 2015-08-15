@@ -1,0 +1,48 @@
+    <!-- Two Columns -->
+    <div class="container content-md">
+        <div class="text-center margin-bottom-50">
+          <p class="space-lg-hor">{{include.desc}} </p>
+        </div>
+
+        {% assign imageSetArray = {{include.images}} | split: "," %}
+        {% assign infoSetArray = {{include.i}} | split: ";" %}
+
+        {% for imageSet in imageSetArray %}
+          {% if foreloop.last == true %}
+            <div class="row">
+          {% else %}
+            <div class="row  margin-bottom-30">
+          {% endif %}
+
+          {% assign imageArray = {{imageSet}} | split: ":" %}
+          {% assign infoArray = {{infoSetArray[forloop.index0]}} | split: ":" %}
+
+          <!--determine number of images per row-->
+          {% if imageArray.size == 2 %}
+            {% assign colsize = "col-sm-6" %}
+          {% elsif imageArray.size == 3 %}
+            {% assign colsize = "col-sm-4" %}
+          {% elsif imageArray.size == 4 %}
+            {% assign colsize = "col-sm-3" %}
+          {% elsif imageArray.size == 6 %}
+            {% assign colsize = "col-sm-2" %}
+          {% else %}
+            {% assign colsize = "col-sm-3" %}
+          {% endif %}
+
+          {% for image in imageArray %}
+            {% assign imageName = {{image}} | strip %}
+            <div class="{{colsize}} sm-margin-bottom-30">
+              <a href="{{include.cdn}}/{{imageName}}"
+                rel="gallery" class="fancybox img-hover-v1" title="{{infoArray[forloop.index0]}}">
+                <span>
+                  <img class="rounded-2x img-responsive" src="{{include.cdn}}/{{imageName}}" alt="">
+                </span>
+              </a>
+            </div>
+          {% endfor %}
+          </div>
+        {% endfor %}
+    </div>
+    <!-- End Two Columns -->
+

@@ -1,0 +1,30 @@
+---
+layout: unify-v4
+title: "The Jalan Cinta Gazette"
+id: news
+---
+
+<div class="container content-md">
+  <div class="row margin-bottom-30">
+    <div class="col-md-8 md-margin-bottom-30">
+      <ul class="post-list">
+        {% for post in site.posts %}
+          <li>
+            <p>post.url: {{post.url}}, site.baseurl: {{site.baseurl}}</p>
+            <p>site.url: {{site.url}}</p>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <h2>
+              <!-- <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> -->
+              <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+            </h2>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col-md-4 md-margin-bottom-30">
+    </div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,35 @@
+---
+layout: unify-v4
+gallery: fancybox
+title: The Sanctuary Land
+id: gallery1
+---
+
+  <!--where images are located, cdn or path-->
+  {% assign cdn = "https://djzer6zmwwglx.cloudfront.net/gallery1" %}
+
+  <!--Gallery description-->
+  {% capture desc %}
+    The block of land soon to become home to Jalan Cinta Santuary. Out of the
+    jungle will emerge a sacred space of great beauty. Listen: Can you hear the
+    flowing river in the ravine?
+  {% endcapture %}
+
+  <!--Filename of gallery images-->
+  <!--NOTE: See above for making proper assignments-->
+  {% assign info = "Looking at the Sanctuary land.:View from the car parking area looking into the site." %}
+  {% assign info = {{info | append: ";The view from your villa.:Sitting in one of our gathering spaces.:Rooms will be scattered amongst the trees."}} %}
+  {% assign info = {{info | append: ";Garden space with a villa in the background.:A communal gathering room. "}} %}
+  {% assign info = {{info | append: ";Gathering spaces will emerge here.:Dancing on a pool deck, then dive into our infinity pool.:Boys being boys as they explore a path down to the river, meditation decks and message huts."}} %}
+  {% assign info = {{info | append: ";meditation decks, tranquil massage and meditation spaces all offered close to the river:pointing out the natural spring – soon to become a feature!"}} %}
+
+  {% assign images = "the-blocks.jpg:lands.jpg" %}
+  {% assign images = {{images | append: ",ravine-sandys.jpg:meets.jpg:rambutans.jpg"}} %}
+  {% assign images = {{images | append: ",land2s.jpg:land4s.jpg"}} %}
+  {% assign images = {{images | append: ",land-groups.jpg:group-dances.jpg:land-group2s.jpg"}} %}
+  {% assign images = {{images | append: ",down-to-river.jpg:spring.jpg"}} %}
+
+  <!--Include fancybox passing parameters-->
+  {% include gallery/fancybox.html desc=desc images=images cdn=cdn i=info %}
+
+
