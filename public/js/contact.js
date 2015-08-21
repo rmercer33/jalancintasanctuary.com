@@ -21,7 +21,7 @@ $(document).ready(function() {
     e.preventDefault();
 
     $(".submit-message")
-      .html("<p><i class='fa fa-spin fa-spinner'></i>&nbsp;Working ...</p>");
+      .html("<i class='fa fa-spin fa-spinner'></i>&nbsp;Working ...");
 
     var target = $(e.target);
     var data = {
@@ -35,14 +35,14 @@ $(document).ready(function() {
     subscriber.save(data, {
       success: function() {
         $(".submit-message")
-          .html("<p><i class='fa fa-check'></i> Thank you.</p>");
+          .html("<i class='fa fa-check'></i> Thank you.");
 
         $("[name='sname']").val("");
         $("[name='semail']").val("");
       },
       error: function() {
         $(".submit-message")
-          .html("<p><i class='fa fa-bolt'></i> There was an error.</p>");
+          .html("<i class='fa fa-bolt'></i> There was an error.");
       }
     });
   });

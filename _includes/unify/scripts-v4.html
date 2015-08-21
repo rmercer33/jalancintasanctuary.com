@@ -1,10 +1,11 @@
 <script type="text/javascript" src="public/plugins/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="public/plugins/jquery/jquery-migrate.min.js"></script>
 <script type="text/javascript" src="public/plugins/bootstrap/js/bootstrap.min.js"></script>
+
 <!-- JS Implementing Plugins -->
 <script type="text/javascript" src="public/plugins/back-to-top.js"></script>
 <script type="text/javascript" src="public/plugins/smoothScroll.js"></script>
-<!-- <script type="text/javascript" src="public/plugins/jquery.parallax.js"></script> -->
+
 {% if page.gallery %}
   {% include gallery/{{page.gallery}}.js %}
 {% endif %}
@@ -17,6 +18,9 @@
 {% if page.form %}
   {% include form/{{page.form}}.js %}
 {% endif %}
+{% if page.annotator %}
+  {% include annotator/annotator.html %}
+{% endif %}
 
 <script src="https://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
 <script type="text/javascript" src="public/js/contact.js"></script>
@@ -27,6 +31,17 @@
 <!-- JS Page Level -->
 <script type="text/javascript" src="public/js/app.js"></script>
 <script type="text/javascript" src="public/js/jcs.js"></script>
+
+{% if page.id == "plans" %}
+<script type="text/javascript" src="public/js/plans.js"></script>
+{% endif %}
+
+{% if page.store %}
+<script type="text/javascript" src="public/plugins/store/store.min.js"></script>
+<!--{{page.store | prepend: "page.store: "}}-->
+{% include store/{{page.store | append: '.js'}} %}
+{% endif %}
+
 <script type="text/javascript">
   jQuery(document).ready(function() {
     App.init();
@@ -35,6 +50,9 @@
     {% endif %}
     {% if page.banner == "gmap" %}
       {% include map/{{page.banner}}.init %}
+    {% endif %}
+    {% if page.annotator %}
+      {% include annotator/annotator.init %}
     {% endif %}
   });
 </script>

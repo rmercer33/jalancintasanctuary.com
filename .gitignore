@@ -5,6 +5,7 @@ _sass/
 contact.html
 css/
 icons/
+tags/
 node_modules/
 aws-keys.json
 .*

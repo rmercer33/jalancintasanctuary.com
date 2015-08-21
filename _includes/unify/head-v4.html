@@ -57,6 +57,9 @@
 {% if page.gallery %}
   {% include gallery/{{page.gallery}}.css %}
 {% endif %}
+{% if page.id == "error" %}
+<link rel="stylesheet" href="public/css/pages/page_404_error.css">
+{% endif %}
 
 <!-- CSS Customization -->
 <link rel="stylesheet" href="public/css/custom.css">

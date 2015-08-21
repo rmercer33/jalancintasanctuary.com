@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <title>Jalan Cinta Sanctuary</title>
+
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {% include jcs/twitter.meta %}
+  {% include jcs/fb.meta %}
+
+  <!-- Web Fonts -->
+  <link rel="stylesheet" 
+    href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
+
+  <!-- CSS Global Compulsory -->
+  <link rel="stylesheet" href="public/plugins/bootstrap/css/bootstrap.min.css">
+
+  <!-- CSS Header and Footer -->
+  <link rel="stylesheet" href="public/css/headers/header-v4.css">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="public/plugins/animate.css">
+  <link rel="stylesheet" href="public/plugins/font-awesome/css/font-awesome.min.css">
+
+  <!-- CSS Customization -->
+  <link rel="stylesheet" href="public/css/pages/page_coming_soon.css">
+  <link rel="stylesheet" href="public/css/custom.css">
+  <link rel="stylesheet" href="public/css/error.css">
+
+  <script type="text/javascript" src="public/plugins/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="public/plugins/backstretch/jquery.backstretch.min.js"></script>
+
+</head>
+
+<body class="coming-soon-page">
+  <script type="text/javascript">
+    $.backstretch(["https://djzer6zmwwglx.cloudfront.net/wol/splash.jpg"]);
+  </script>
+
+<div class="coming-soon-border"></div>
+<div class="coming-soon-bg-cover"></div>
+
+<div class="container cooming-soon-content">
+  {{content}}
+</div>
+
+<!--=== Sticky Footer ===-->
+<div class="container sticky-footer">
+  <p class="copyright-space">
+    <i class="fa fa-heart-o js-heart"></i>&nbsp;&nbsp;Welcome to Jalan Cinta Sanctuary
+  </p>
+</div>
+
+<!-- JS Global Compulsory -->
+<script type="text/javascript" src="public/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="public/js/jcs.js"></script>
+<script>
+$(document).ready(function() {
+  var test = jcs.getQueryString("test");
+
+  if (typeof test === "undefined") {
+    test = "0";
+  }
+  console.log('test: %s', test);
+
+  // $.backstretch(["https://djzer6zmwwglx.cloudfront.net/wol/splash.jpg"]);
+
+  $.wait = function(time) {
+    return $.Deferred(function( dfd ) {
+        setTimeout(dfd.resolve, time);
+    }).promise();
+  };
+
+  $.wait(9000).then(function(){
+    if (test == "0") 
+      window.location.href = "index.html";
+  });
+  document.getElementsByTagName("html")[0].style.visibility = "visible";
+});
+
+</script>
+
+</body>
+</html>
+

@@ -7,16 +7,15 @@
 </head>
 
 <body>
+{% if page.facebook %}
+  {% include fb/fbapi.html %}
+{% endif %}
 <div class="wrapper">
   <div class="header-v4">
     {% include unify/navbar-v4.html %}
   </div>
   {% include slider/slider-v2.html %}
 
-  {% comment %}
-    <!--not ready for prime time-->
-    {% include unify/breadcrumbs.html %}
-  {% endcomment %}
   {% if page.title %}
     <div class="heading heading-v4 jcs-page-heading margin-bottom-20">
       <h2>{{ page.title }}</h2>

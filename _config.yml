@@ -1,4 +1,4 @@
-exclude: [rick, contact_.html, cdn, node_modules, aws-keys.json, package.json, Gruntfile.js]
+exclude: [principle-orig.html, public/img/retired, tags, rick, contact_.html, cdn, node_modules, aws-keys.json, package.json, Gruntfile.js]
 
 title: Jalan Cinta Sanctuary
 email: love@thewayoflove.com

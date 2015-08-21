@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script type="text/javascript" src="public/plugins/store/store.min.js"></script>
+  <script type="text/javascript" src="public/js/jcs.js"></script>
+  <script type="text/javascript">
+    var test = jcs.getQueryString("test");
+    var hostname = window.location.hostname;
+
+    if (typeof test === "undefined") {
+      test = "0";
+    }
+
+    if (hostname === "jalancintasanctuary.net") {
+      test = "1";
+    }
+
+    console.log('hostname: %s, test: %s', hostname,test);
+
+    var jcsActivity = store.get("jcsActivity");
+    var firstTimeRedirect = "splash.html";
+
+    if (typeof jcsActivity === "undefined" || test === "1") {
+      console.log('redirecting to splash page');
+      window.location.href = firstTimeRedirect + "?test=1";
+    }
+    else {
+      window.location.href = "index.html";
+    }
+  </script>
+</head>
+<body>
+
+</body>
+</html>

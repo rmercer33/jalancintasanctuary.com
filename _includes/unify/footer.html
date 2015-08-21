@@ -1,14 +1,24 @@
 <div class="copyright">
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-4 jcs-footer-logo">
         <a href="index.html">
-          <img class="pull-left" id="logo-footer" src="public/img/jcs/jcs-logo-dark-sm.png" alt="">
+          <img class="pull-left" id="logo-footer" src="public/img/jcs/logo/jcs-logo-dark-sm.png" alt="">
         </a>
       </div>
       {% if page.name != "contact.html" %}
-      <div class="col-md-4 col-md-offset-5">
-        <h4 style="color: #3498DB;">Subscribe to our mailing list</h4>
+      <div class="col-md-4 col-md-offset-4">
+        <!-- <h5 style="color: #3498DB;"> -->
+        <!--   <a href="https://www.facebook.com/pages/Jalan-Cinta-Sanctuary/960628197309049?ref=hl"  -->
+        <!--     class="tooltips" data-toggle="tooltip" target="_blank" -->
+        <!--     data-placement="top" title="" data-original-title="Visit us on Facebook"> -->
+        <!--     <i class="fa fa-facebook-square"></i> -->
+        <!--   </a> -->
+        <!--   &nbsp;Visit us on facebook -->
+        <!-- </h5> -->
+        <h4 style="color: #3498DB;">
+          Join our mailing list
+        </h4>
         <form id="subscribe-form" class="footer-subsribe">
           <div class="input-group">
             <input class="input-sm" type="text" name="sname" 
@@ -16,11 +26,12 @@
             <input class="input-sm" type="email" name="semail" 
               required class="form-control" placeholder="Email Address">
             <button class="btn-sm rounded btn-u" type="submit" class="btn-u">Subscribe Now</button>
-          </div>
-          <div class="submit-message">
-            <p><i class="fa fa-heart-o"></i></p>
+            <span style="color:white;margin-left:10px" class="submit-message">
+              <i class="fa fa-heart-o"></i>
+            </span>
           </div>
         </form>
+        <small>&nbsp;</small>
       </div>
       {% endif %}
     </div>
