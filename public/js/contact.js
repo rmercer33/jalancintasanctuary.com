@@ -16,6 +16,7 @@ $(document).ready(function() {
   Parse.initialize(parseApplId, parseJSId);
   var Contact = Parse.Object.extend("ContactInfo");
   var Subscriber = Parse.Object.extend("Subscriber");
+  var Activity = Parse.Object.extend("Activity");
 
   $("#subscribe-form" ).on("submit", function(e) {
     e.preventDefault();
@@ -43,6 +44,22 @@ $(document).ready(function() {
       error: function() {
         $(".submit-message")
           .html("<i class='fa fa-bolt'></i> There was an error.");
+      }
+    });
+
+    var activity = new Activity();
+    var jcsData = store.get('jcsActivity');
+    jcsData.subscription = data;
+    var sData = {
+      event: "Subscription",
+      activity: jcsData
+    };
+    activity.save(sData, {
+      success: function() {
+        console.log('subscription activity saved');
+      },
+      error: function() {
+        console.log('subscription activity save error');
       }
     });
   });
@@ -98,6 +115,27 @@ $(document).ready(function() {
           .addClass("text-danger")
           .html("<p><i class='fa fa-bolt'></i> There was an error sending your request,"
             + " please check if your email address is correct.</p>");
+      }
+    });
+
+    var activity = new Activity();
+    var jcsData = store.get('jcsActivity');
+    jcsData.contact = {
+      name: data.name,
+      email: data.email,
+      phone: data.phone
+    };
+
+    var aData = {
+      event: "Contact Form",
+      activity: jcsData
+    };
+    activity.save(aData, {
+      success: function() {
+        console.log('contact form activity saved');
+      },
+      error: function() {
+        console.log('contact form activity save error');
       }
     });
   });

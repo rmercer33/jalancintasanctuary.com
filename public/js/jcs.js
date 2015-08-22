@@ -16,16 +16,37 @@ var jcs = (function () {
   function initStore() {
     var now = Date.now();
     return  {
-      visitNumber: 1,
-      currentVisitDate: now,
-      lastVisitDate: now
+      version: "v1",
+      site: {
+        visitNumber: 1,
+        currentVisitDate: now,
+        lastVisitDate: now
+      },
+      pages: {},
+      downloads: {}
     };
+  }
+
+  // convert to v1
+  function migrate(jcsActivity) {
+    var jcsNew = jcsActivity;
+    if (typeof jcsActivity.version === "undefined") {
+      jcsNew = initStore();
+      jcsNew.site.visitNumber = jcsActivity.visitNumber;
+      jcsNew.site.currentVisitDate = jcsActivity.currentVisitDate;
+      jcsNew.site.lastVisitDate = jcsActivity.lastVisitDate;
+    }
+
+    return jcsNew;
   }
 
   function getStore() {
     var jcsActivity = store.get("jcsActivity");
     if (typeof jcsActivity === "undefined") {
       jcsActivity = initStore();
+    }
+    else {
+      jcsActivity = migrate(jcsActivity);
     }
     return jcsActivity;
   }
@@ -86,10 +107,10 @@ var jcs = (function () {
       var now = Date.now();
       var jcsActivity = getStore("jcsActivity");
 
-      if (now - jcsActivity.currentVisitDate > maxTimeDiff) {
-        jcsActivity.visitNumber = jcsActivity.visitNumber + 1;
-        jcsActivity.lastVisitDate = jcsActivity.currentVisitDate; 
-        jcsActivity.currentVisitDate = now;
+      if (now - jcsActivity.site.currentVisitDate > maxTimeDiff) {
+        jcsActivity.site.visitNumber = jcsActivity.site.visitNumber + 1;
+        jcsActivity.site.lastVisitDate = jcsActivity.site.currentVisitDate; 
+        jcsActivity.site.currentVisitDate = now;
 
         setStore("jcsActivity", jcsActivity);
       }
@@ -98,17 +119,33 @@ var jcs = (function () {
       var now = Date.now();
       var jcsActivity = getStore("jcsActivity");
 
-      if (!jcsActivity[page]) {
-        jcsActivity[page] = {
+      if (!jcsActivity.pages[page]) {
+        jcsActivity.pages[page] = {
           pageViewCount: 1,
           pageViewDate: now
         };
       }
       else {
-        jcsActivity[page].pageViewCount = jcsActivity[page].pageViewCount + 1;
-        jcsActivity[page].pageViewDate = now;
+        jcsActivity.pages[page].pageViewCount = jcsActivity.pages[page].pageViewCount + 1;
+        jcsActivity.pages[page].pageViewDate = now;
       }
       setStore("jcsActivity", jcsActivity);
-    }
+    },
+    recordDownload: function(item) {
+      var now = Date.now();
+      var jcsActivity = getStore("jcsActivity");
+
+      if (typeof jcsActivity.downloads[item] === "undefined") {
+        jcsActivity.downloads[item] = {
+          downloadCount: 1,
+          downloadDate: now
+        };
+      }
+      else {
+        jcsActivity.downloads[item].downloadCount = jcsActivity.downloads[item].downloadCount + 1;
+        jcsActivity.downloads[item].downloadDate = now;
+      }
+      setStore("jcsActivity", jcsActivity);
+    },
   };
 })();

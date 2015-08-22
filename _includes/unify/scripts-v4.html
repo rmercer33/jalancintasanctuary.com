@@ -36,9 +36,8 @@
 <script type="text/javascript" src="public/js/plans.js"></script>
 {% endif %}
 
-{% if page.store %}
 <script type="text/javascript" src="public/plugins/store/store.min.js"></script>
-<!--{{page.store | prepend: "page.store: "}}-->
+{% if page.store %}
 {% include store/{{page.store | append: '.js'}} %}
 {% endif %}
 
