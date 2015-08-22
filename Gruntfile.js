@@ -5,6 +5,18 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
     aws: grunt.file.readJSON("aws-keys.json"),
+    watch: {
+        options: {
+          livereload: true,
+        },
+        contact: {
+          files: ['contact_.html'],
+          tasks: ['preprocess:dev'],
+        },
+        js: {
+          files: ['public/js/*.js']
+        },
+      },
     aws_s3: {
       options: {
         accessKeyId: "<%= aws.AWSAccessKeyId %>", // Use the variables
