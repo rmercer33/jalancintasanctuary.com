@@ -1,4 +1,4 @@
-<title>Jalan Cinta Sanctuary</title>
+<title>{% if page.title %} {{page.title}} {% else %}Jalan Cinta Sanctuary{% endif %}</title>
 
 <!-- Meta -->
 <meta charset="utf-8">
@@ -64,4 +64,6 @@
 <!-- CSS Customization -->
 <link rel="stylesheet" href="public/css/custom.css">
 <link rel="stylesheet" href="public/css/theme-colors/blue.css" />
+
+{% include analytics/google.js %}
 
