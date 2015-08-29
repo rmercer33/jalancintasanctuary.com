@@ -8,6 +8,8 @@
 
 {% if page.social %}
 {% include social/{{page.social | append: ".meta"}} %}
+{% elsif post.social %}
+{% include social/{{post.social | append: ".meta"}} %}
 {% else %}
 {% include social/twitter.meta %}
 {% include social/fb.meta %}
@@ -38,9 +40,6 @@
 
 <!-- Web Fonts -->
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
-{% if page.backstretch %}
-  {% include backstretch/{{page.backstretch}}.css %}
-{% endif %}
 
 <!-- CSS Global Compulsory -->
 <link rel="stylesheet" href="/public/plugins/bootstrap/css/bootstrap.min.css">
@@ -54,12 +53,7 @@
 <link rel="stylesheet" href="/public/plugins/animate.css">
 <link rel="stylesheet" href="/public/plugins/line-icons/line-icons.css">
 <link rel="stylesheet" href="/public/plugins/font-awesome/css/font-awesome.min.css">
-{% if page.gallery %}
-  {% include gallery/{{page.gallery}}.css %}
-{% endif %}
-{% if page.id == "error" %}
-<link rel="stylesheet" href="/public/css/pages/page_404_error.css">
-{% endif %}
+<link rel="stylesheet" href="/public/plugins/fancybox/source/jquery.fancybox.css">
 
 <!-- CSS Customization -->
 <link rel="stylesheet" href="/public/css/custom.css">

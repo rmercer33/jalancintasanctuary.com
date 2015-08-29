@@ -1,0 +1,47 @@
+
+<!--=== Blog Posts ===-->
+<div class="container content-md">
+  <div class="row">
+    <!-- Blog All Posts -->
+    <div class="col-md-9">
+      <!-- News v3 -->
+      {% include image-post.html %}
+      <!-- End News v3 -->
+
+      <div class="clearfix margin-bottom-20"><hr></div>
+
+      <!-- News v3 -->
+      {% include slider-post.html %}
+      <!-- End News v3 -->
+
+      <div class="clearfix margin-bottom-20"><hr></div>
+
+      <!-- News v3 -->
+      {% include vimeo-post.html %}
+      <!-- End News v3 -->
+
+      <div class="clearfix margin-bottom-20"><hr></div>
+
+      <!-- Pager v3 -->
+      <ul class="pager pager-v3 pager-sm no-margin-bottom">
+        <li class="previous"><a href="#">&larr; Older</a></li>
+        <li class="page-amount">1 of 7</li>
+        <li class="next"><a href="#">Newer &rarr;</a></li>
+      </ul>
+      <!-- End Pager v3 -->
+    </div>
+    <!-- End Blog All Posts -->
+
+    <!-- Blog Sidebar -->
+    <div class="col-md-3">
+
+        {% include latestposts.html %}
+        {% include tags.html %}
+        {% include photostream.html %}
+
+    </div>
+    <!-- End Blog Sidebar -->
+  </div>
+</div>
+<!--=== End Blog Posts ===-->
+

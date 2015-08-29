@@ -1,0 +1,78 @@
+---
+layout: unify-blog
+title: "The Jalan Cinta Gazette"
+id: news
+social: blog
+---
+
+  {% include slider/slider-v2.html %}
+
+  {% if page.title %}
+    <div class="heading heading-v4 jcs-page-heading margin-bottom-20">
+      <h2 id="page-title">{{ page.title }}</h2>
+    </div>
+  {% endif %}
+
+  <!--=== Blog Posts ===-->
+  <div class="container content-md">
+    <div class="row">
+      <!-- Blog All Posts -->
+      <div class="col-md-9">
+        {% for post in paginator.posts %}
+          {% include blog/author/post-author.info %}
+          {% if post.type == 'regular' %}
+            {% include blog/template/regular-post.html %}
+          {% elsif post.type == 'slider' %}
+            {% include blog/template/slider-post.html %}
+          {% elsif post.type == 'vimeo' %}
+            {% include blog/template/vimeo-post.html %}
+          {% else %}
+            {% include blog/template/regular-post.html %}
+          {% endif %}
+          <div class="clearfix margin-bottom-20"><hr></div>
+        {% endfor %}
+
+        <!-- Pager v3 -->
+        <ul class="pager pager-v3 pager-sm no-margin-bottom">
+          {% if paginator.previous_page %}
+            {% if paginator.previous_page == 1 %}
+            <li class="previous">
+              <a href="{{paginator.previous_page_path}}">&larr; Newer</a>
+            </li>
+            {% else %}
+            <li class="previous">
+              <a href="{{paginator.previous_page_path | append: "/index.html"}}">&larr; Newer</a>
+            </li>
+            {% endif %}
+
+          {% else %}
+          <li class="previous done"><a>&larr; Newer</a></li>
+          {% endif %}
+          <li class="page-amount">{{paginator.page}} of {{paginator.total_pages}}</li>
+          {% if paginator.next_page %}
+          <li class="next">
+            <a href="{{paginator.next_page_path | append: "/index.html"}}">Older &rarr;</a>
+          </li>
+          {% else %}
+          <li class="next done"><a>Older &rarr;</a></li>
+          {% endif %}
+        </ul>
+        <!-- End Pager v3 -->
+      </div>
+      <!-- End Blog All Posts -->
+
+      <!-- Blog Sidebar -->
+      <div class="col-md-3">
+        <h3>Hello, this is Rick</h3>
+
+        {% comment %}
+          {% include blog/template/latestposts.html %}
+          {% include blog/template/tags.html %}
+          {% include blog/template/photostream.html %}
+        {% endcomment %}
+
+      </div>
+      <!-- End Blog Sidebar -->
+    </div>
+  </div>
+  <!--=== End Blog Posts ===-->

@@ -1,0 +1,4 @@
+{% assign author = "Way of Love" %}
+{% assign author-image = "/public/img/blog/wol/profile.jpg" %}
+{% assign author-quote = "WOL:Somewhere beyond right and wrong there is a field, I will meet you there." %}
+
