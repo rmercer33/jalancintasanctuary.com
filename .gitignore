@@ -2,6 +2,8 @@ rick/
 _site/
 _templates/
 _sass/
+pandoc/
+project/
 contact.html
 css/
 icons/
