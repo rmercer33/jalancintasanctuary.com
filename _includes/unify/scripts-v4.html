@@ -54,6 +54,9 @@
     {% if page.banner == "gmap" %}
       {% include map/{{page.banner}}.init %}
     {% endif %}
+    {% if page.id == "plans" %}
+			$('[data-toggle="tooltip"]').tooltip();
+    {% endif %}
     {% if page.annotator %}
       {% include annotator/annotator.init %}
     {% endif %}
