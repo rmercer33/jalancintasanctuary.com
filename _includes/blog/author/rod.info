@@ -1,4 +1,0 @@
-{% assign author = "Rod West" %}
-{% assign author-image = "/public/img/blog/rod/profile.png" %}
-{% assign author-quote = "Rod:Somewhere beyond right and wrong there is a field, I will meet you there." %}
-
