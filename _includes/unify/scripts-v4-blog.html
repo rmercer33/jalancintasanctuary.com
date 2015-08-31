@@ -1,0 +1,35 @@
+<script type="text/javascript" src="/public/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="/public/plugins/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="/public/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="/public/plugins/back-to-top.js"></script>
+<script type="text/javascript" src="/public/plugins/smoothScroll.js"></script>
+<script type="text/javascript" src="/public/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
+
+<script src="https://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+<script type="text/javascript" src="/public/js/contact.js"></script>
+
+<!-- JS Customization -->
+<script type="text/javascript" src="/public/js/custom.js"></script>
+
+<!-- JS Page Level -->
+<script type="text/javascript" src="/public/js/app.js"></script>
+<script type="text/javascript" src="/public/js/jcs.js"></script>
+<script type="text/javascript" src="/public/js/blog.js"></script>
+<script type="text/javascript" src="/public/js/plugins/fancy-box.js"></script>
+
+{% include blog/disqus/disqus-count.html %}
+
+<script type="text/javascript">
+  jQuery(document).ready(function() {
+    App.init();
+    FancyBox.initFancybox();
+  });
+</script>
+<!--[if lt IE 9]>
+    <script src="/public/plugins/respond.js"></script>
+    <script src="/public/plugins/html5shiv.js"></script>
+    <script src="/public/plugins/placeholder-IE-fixes.js"></script>
+<![endif]-->
+

@@ -7,10 +7,10 @@
 <meta name="author" content="Way of Love">
 
 {% if page.social %}
-{% include jcs/{{page.social | append: ".meta"}} %}
+{% include social/{{page.social | append: ".meta"}} %}
 {% else %}
-{% include jcs/twitter.meta %}
-{% include jcs/fb.meta %}
+{% include social/twitter.meta %}
+{% include social/fb.meta %}
 {% endif %}
 
 <!-- Favicon -->
@@ -43,27 +43,27 @@
 {% endif %}
 
 <!-- CSS Global Compulsory -->
-<link rel="stylesheet" href="public/plugins/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="public/css/style.css">
+<link rel="stylesheet" href="/public/plugins/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/public/css/style.css">
 
 <!-- CSS Header and Footer -->
-<link rel="stylesheet" href="public/css/headers/header-v4.css">
-<link rel="stylesheet" href="public/css/footers/footer-default.css">
+<link rel="stylesheet" href="/public/css/headers/header-v4.css">
+<link rel="stylesheet" href="/public/css/footers/footer-default.css">
 
 <!-- CSS Implementing Plugins -->
-<link rel="stylesheet" href="public/plugins/animate.css">
-<link rel="stylesheet" href="public/plugins/line-icons/line-icons.css">
-<link rel="stylesheet" href="public/plugins/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/public/plugins/animate.css">
+<link rel="stylesheet" href="/public/plugins/line-icons/line-icons.css">
+<link rel="stylesheet" href="/public/plugins/font-awesome/css/font-awesome.min.css">
 {% if page.gallery %}
   {% include gallery/{{page.gallery}}.css %}
 {% endif %}
 {% if page.id == "error" %}
-<link rel="stylesheet" href="public/css/pages/page_404_error.css">
+<link rel="stylesheet" href="/public/css/pages/page_404_error.css">
 {% endif %}
 
 <!-- CSS Customization -->
-<link rel="stylesheet" href="public/css/custom.css">
-<link rel="stylesheet" href="public/css/theme-colors/blue.css" />
+<link rel="stylesheet" href="/public/css/custom.css">
+<link rel="stylesheet" href="/public/css/theme-colors/blue.css" />
 
 {% include analytics/google.js %}
 

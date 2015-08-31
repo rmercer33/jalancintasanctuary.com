@@ -1,0 +1,4 @@
+{% assign author = "Jalan Cinta Sanctuary" %}
+{% assign author-image = "/public/img/blog/jcs/profile.jpg" %}
+{% assign author-quote = "JCS:Somewhere beyond right and wrong there is a field, I will meet you there." %}
+

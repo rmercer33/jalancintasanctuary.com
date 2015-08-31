@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  {% include unify/head-v4-blog.html %}
+</head>
+
+<body>
+{% if page.facebook %}
+  {% include fb/fbapi.html %}
+{% endif %}
+<div class="wrapper">
+  <div class="header-v4">
+    {% include unify/navbar-v4.html %}
+  </div>
+
+  {{content}}
+
+  <div class="footer-default">
+    {% include unify/footer.html %}
+  </div>
+</div><!--/wrapper-->
+
+<!-- JS Global Compulsory -->
+{% include unify/scripts-v4-blog.html %}
+
+</body>
+</html>

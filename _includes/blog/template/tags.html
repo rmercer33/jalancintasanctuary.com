@@ -1,0 +1,13 @@
+<!--tags sidebar-->
+<div class="headline headline-md"><h2>Blog Tags</h2></div>
+<ul class="list-unstyled blog-tags margin-bottom-30">
+  {% for tag in site.data.taglist %}
+  <li>
+    <a href="{{site_url}}/blog/tag/{{tag.tag}}/index.html">
+      <i class="fa fa-tags"></i> {{tag.name}}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+<!-- End Blog Tags -->
+

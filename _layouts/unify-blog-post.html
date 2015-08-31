@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  {% include unify/head-v4-blog.html %}
+</head>
+
+<body>
+{% include blog/author/page-author.info %}
+{% if page.facebook %}
+  {% include fb/fbapi.html %}
+{% endif %}
+<div class="wrapper">
+  <div class="header-v4">
+    {% include unify/navbar-v4.html %}
+  </div>
+  {% if page.post-id %}
+    {% include slider/post-slider.html %}
+  {% endif %}
+  <div class="container content-md">
+    <div class="row margin-bottom-30">
+      <div class="col-md-9 md-margin-bottom-30">
+        <!-- <div class="heading heading-v4 jcs-page-heading margin-bottom-20"> -->
+        {% include blog/template/blog-post-info.html %}
+        <div class="heading jcs-page-heading margin-bottom-20">
+          <h2>{{page.title}}</h2>
+        </div>
+
+        {{content}}
+
+        <hr>
+        {% if page.comments %}
+        <a class="comment-control" href="#"><i class="fa fa-comments"></i> Show Comments</a>
+        <div class="comment-section">
+          <div>
+            {% include blog/disqus/disqus.html %}
+          </div>
+        </div>
+        {% else %}
+        <div>
+          <span><i class="fa fa-comments"></i> Comments closed for this post.</span>
+        </div>
+        {% endif %}
+      </div>
+      <div class="col-md-3 md-margin-bottom-30">
+        <div class="jcs-page-heading">
+          {% include blog/template/author.html %}
+          {% include blog/template/tags.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-default">
+    {% include unify/footer.html %}
+  </div>
+</div><!--/wrapper-->
+
+<!-- JS Global Compulsory -->
+{% include unify/scripts-v4-blog.html %}
+
+</body>
+</html>

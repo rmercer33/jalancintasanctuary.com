@@ -1,0 +1,40 @@
+<!--Regular Post-->
+<div class="row margin-bottom-20">
+  <div class="col-sm-5 sm-margin-bottom-20">
+    {% if post.list-image %}
+    <img class="img-responsive rounded-2x" src="{{post.list-image}}" alt="">
+    {% else %}
+    <!-- <img class="img-responsive rounded-2x" src="{{author-image}}" alt=""> -->
+    <img class="img-responsive rounded-2x" src="{{site.data.authors[post.author].image}}" alt="">
+    {% endif %}
+  </div>
+  <div class="col-sm-7 news-v3">
+    <div class="news-v3-in-sm no-padding">
+      <ul class="list-inline posted-info">
+        {% if post.author %}
+          <li>Author: {{site.data.authors[post.author].name}}</li>
+          {% if post.category %}
+          <li>In <a href="#">{{post.category}}</a></li>
+          {% endif %}
+        {% else %}
+          <li>AUTHOR NAME MISSING</li>
+        {% endif %}
+        <li>Posted {{ post.date | date: "%b %-d, %Y" }}</li>
+      </ul>
+      <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+      {{post.excerpt}}
+
+      {% if post.comments %}
+      <ul class="post-shares">
+        <li>
+          <i class="rounded-x icon-speech"></i>
+          <span class="disqus-comment-count" data-disqus-identifier="{{post.title | slugify}}">
+            ?
+          </span>
+        </li>
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+</div><!--/end row-->
+

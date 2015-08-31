@@ -1,0 +1,15 @@
+jayem:
+  name: Jayem
+  social-images: /public/img/blog/img/tags/jm/jm.jpg
+  desc: "See what our authors have to say about Jayem."
+
+wom:
+  name: Way of Mastery
+  social-images: /public/img/blog/img/tags/wom/wom.jpg
+  desc: "See what our authors have to say about the Way of Mastery."
+
+jcs:
+  name: Jalan Cinta Sanctuary
+  social-images: /public/img/blog/img/tags/jcs/jcs.jpg
+  desc: "See what our authors have to say about the Jalan Cinta Sanctuary."
+

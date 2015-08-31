@@ -1,4 +1,6 @@
-exclude: [rick, parse, contact_.html, cdn, node_modules, aws-keys.json, package.json, Gruntfile.js]
+exclude: [pandoc, project, rick, vim, parse, contact_.html, cdn, node_modules, aws-keys.json, package.json, Gruntfile.js]
+
+gems: [ 'jekyll-pandoc-multiple-formats' ]
 
 title: Jalan Cinta Sanctuary
 email: love@thewayoflove.com
@@ -14,16 +16,50 @@ url: "http://jalancintasanctuary.com" # the base hostname & protocol for your si
 twitter_username: jekyllrb
 github_username:  jekyll
 
+paginate: 3
+paginate_path: "blog/post/page:num"
+
 # Build settings
-markdown: kramdown
+# markdown: kramdown
+markdown: pandoc
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  use_coderay: false
+  parse_block_html: true
+
+pandoc:
+  skip: true
+  impose: false
+  output: ./pandoc
+  flags: '--smart'
+  site_flags: '--toc'
+  outputs:
+    pdf: '--latex-engine=pdflatex'
+    epub:
+    markdown:
 
 # Server settings
 port: 3000
 
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "unify-v4"
+# Default extension for new posts and pages
+post_ext: md
+page_ext: html
+
+# Default templates for posts and pages
+# Found in _templates/
+post_layout: unify-blog-post
+page_layout: unify-v4
+
+# Format titles with titlecase?
+titlecase: true
+
+# Change default template file (in _templates/)
+post_template: post
+page_template: page
+draft_template: draft
+
