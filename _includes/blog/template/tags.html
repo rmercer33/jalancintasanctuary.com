@@ -1,15 +1,13 @@
 <!--tags sidebar-->
-<div class="headline-v2 bg-color-light"><h2>Tags</h2></div>
-<!-- Tags v2 -->
-<ul class="list-inline tags-v2 margin-bottom-50">
-  <li><a href="#">Web Design</a></li>
-  <li><a href="#">Economy</a></li>
-  <li><a href="#">Sport</a></li>
-  <li><a href="#">Marketing</a></li>
-  <li><a href="#">Books</a></li>
-  <li><a href="#">Elections</a></li>
-  <li><a href="#">Flickr</a></li>
-  <li><a href="#">Politics</a></li>
+<div class="headline headline-md"><h2>Blog Tags</h2></div>
+<ul class="list-unstyled blog-tags margin-bottom-30">
+  {% for tag in site.data.taglist %}
+  <li>
+    <a href="{{site_url}}/blog/tag/{{tag.tag}}/index.html">
+      <i class="fa fa-tags"></i> {{tag.name}}
+    </a>
+  </li>
+  {% endfor %}
 </ul>
-<!-- End Tags v2 -->
+<!-- End Blog Tags -->
 

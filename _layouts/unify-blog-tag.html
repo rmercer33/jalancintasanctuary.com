@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  {% include unify/head-v4-blog.html social="tag" %}
+</head>
+
+<body>
+{% if page.facebook %}
+  {% include fb/fbapi.html %}
+{% endif %}
+<div class="wrapper">
+  <div class="header-v4">
+    {% include unify/navbar-v4.html %}
+  </div>
+
+  {% if page.id %}
+  {% include slider/slider-v2.html %}
+  {% endif %}
+
+  <!--=== Blog Posts ===-->
+  <div class="container content-md">
+    <div class="row">
+      <!-- Blog All Posts -->
+      <div class="col-md-9">
+        <div class="heading heading-v4 jcs-page-heading margin-bottom-20">
+          <h2 id="page-title">Posts Tagged<br/><small>{{site.data.tags[page.tag].name}}</small></h2>
+        </div>
+        {% if site.tags[page.tag] %}
+          {% for post in site.tags[page.tag] %}
+            {% if post.type == 'regular' %}
+              {% include blog/template/regular-post.html %}
+            {% elsif post.type == 'slider' %}
+              {% include blog/template/slider-post.html %}
+            {% elsif post.type == 'vimeo' %}
+              {% include blog/template/vimeo-post.html %}
+            {% else %}
+              {% include blog/template/regular-post.html %}
+            {% endif %}
+            <div class="clearfix margin-bottom-20"><hr></div>
+          {% endfor %}
+        {% else %}
+          <p>There are no posts for this tag.</p>
+        {% endif %}
+      </div>
+      <!-- End Blog All Posts -->
+
+      <!-- Blog Sidebar -->
+      <div class="col-md-3">
+        <div class="jcs-page-heading">
+          {% include blog/template/author.html %}
+          {% include blog/template/tags.html %}
+        </div>
+      </div>
+      <!-- End Blog Sidebar -->
+    </div>
+  </div>
+  <!--=== End Blog Posts ===-->
+
+  <div class="footer-default">
+    {% include unify/footer.html %}
+  </div>
+</div><!--/wrapper-->
+
+<!-- JS Global Compulsory -->
+{% include unify/scripts-v4-blog.html %}
+
+</body>
+</html>

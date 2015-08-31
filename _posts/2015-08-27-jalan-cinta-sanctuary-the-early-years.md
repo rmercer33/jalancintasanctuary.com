@@ -2,10 +2,9 @@
 layout: unify-blog-post
 title: "Jalan Cinta Sanctuary - the Early Years"
 date: 2015-08-27T22:12:43+08:00
-author-id: jcs
-post-type: regular
-category: sandy
-tags: jcs
+author: sandy
+tags: [jcs wom]
+
 ---
 
 The first thoughts of what turned out to be Jalan Cinta Sanctuary were thought many years ago.

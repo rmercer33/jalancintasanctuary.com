@@ -4,30 +4,36 @@
     {% if post.list-image %}
     <img class="img-responsive rounded-2x" src="{{post.list-image}}" alt="">
     {% else %}
-    <img class="img-responsive rounded-2x" src="{{author-image}}" alt="">
+    <!-- <img class="img-responsive rounded-2x" src="{{author-image}}" alt=""> -->
+    <img class="img-responsive rounded-2x" src="{{site.data.authors[post.author].image}}" alt="">
     {% endif %}
   </div>
   <div class="col-sm-7 news-v3">
     <div class="news-v3-in-sm no-padding">
       <ul class="list-inline posted-info">
-        <li>Author: {% if post.author %} {{post.author}} {% else %} {{author}} {% endif %}</li>
-        {% if post.category %}
-        <li>In <a href="#">{{post.category}}</a></li>
+        {% if post.author %}
+          <li>Author: {{site.data.authors[post.author].name}}</li>
+          {% if post.category %}
+          <li>In <a href="#">{{post.category}}</a></li>
+          {% endif %}
+        {% else %}
+          <li>AUTHOR NAME MISSING</li>
         {% endif %}
         <li>Posted {{ post.date | date: "%b %-d, %Y" }}</li>
       </ul>
       <h2><a href="{{post.url}}">{{post.title}}</a></h2>
       {{post.excerpt}}
+
+      {% if post.comments %}
       <ul class="post-shares">
         <li>
-          <a href="#">
-            <i class="rounded-x icon-speech"></i>
-            <span>5</span>
-          </a>
+          <i class="rounded-x icon-speech"></i>
+          <span class="disqus-comment-count" data-disqus-identifier="{{post.title | slugify}}">
+            ?
+          </span>
         </li>
-        <li><a href="#"><i class="rounded-x icon-share"></i></a></li>
-        <li><a href="#"><i class="rounded-x icon-heart"></i></a></li>
       </ul>
+      {% endif %}
     </div>
   </div>
 </div><!--/end row-->

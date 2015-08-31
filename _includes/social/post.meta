@@ -1,0 +1,12 @@
+<!-- Open Graph data -->
+<meta property="og:url" content="http://jalancintasanctuary.com{{page.url}}" >
+{% if page.social-images %}
+{% for image in page.social-images %}
+<meta property="og:image" content="http://jalancintasanctuary.com{{image}}" >
+{% endfor %}
+{% endif %}
+<meta property="og:type" content="website" >
+<meta property="og:title" content="{{page.title}}" >
+<meta property="og:site_name" content="Jalan Cinta Sanctuary Blog" >
+<meta property="fb:app_id" content="922095141145202" >
+<meta property="og:description" content="{{page.excerpt | strip_html}}">

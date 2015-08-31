@@ -1,16 +1,11 @@
 ---
 layout: unify-blog
-title: "The Jalan Cinta Gazette"
-id: news
+x-id: news
 social: blog
 ---
 
-  {% include slider/slider-v2.html %}
-
-  {% if page.title %}
-    <div class="heading heading-v4 jcs-page-heading margin-bottom-20">
-      <h2 id="page-title">{{ page.title }}</h2>
-    </div>
+  {% if page.id %}
+    {% include slider/slider-v2.html %}
   {% endif %}
 
   <!--=== Blog Posts ===-->
@@ -18,8 +13,13 @@ social: blog
     <div class="row">
       <!-- Blog All Posts -->
       <div class="col-md-9">
+        <div class="heading heading-v4 jcs-page-heading margin-bottom-20">
+          <h2 id="page-title">The Jalan Cinta Gazette<br/><small>Recent Posts</small></h2>
+        </div>
         {% for post in paginator.posts %}
+          {% comment %}
           {% include blog/author/post-author.info %}
+          {% endcomment %}
           {% if post.type == 'regular' %}
             {% include blog/template/regular-post.html %}
           {% elsif post.type == 'slider' %}
@@ -63,14 +63,10 @@ social: blog
 
       <!-- Blog Sidebar -->
       <div class="col-md-3">
-        <h3>Hello, this is Rick</h3>
-
-        {% comment %}
-          {% include blog/template/latestposts.html %}
+        <div class="jcs-page-heading">
+          {% include blog/template/author.html %}
           {% include blog/template/tags.html %}
-          {% include blog/template/photostream.html %}
-        {% endcomment %}
-
+        </div>
       </div>
       <!-- End Blog Sidebar -->
     </div>

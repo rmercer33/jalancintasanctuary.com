@@ -1,0 +1,40 @@
+<!-- <div class="well blog-post-tags"> -->
+<div class="blog-post-tags">
+  <ul class="list-unstyled list-inline blog-info">
+    <li><i class="fa fa-calendar"></i> {{ page.date | date: "%b %-d, %Y" }}</li>
+    <li><i class="fa fa-pencil"></i> 
+    <a href="{{site_url}}/blog/author/{{page.author}}/index.html">
+      {{site.data.authors[page.author].name}}
+    </a>
+    </li>
+    {% if page.comments %}
+    <li><i class="fa fa-comments"></i> 
+      <!-- <a href="{{site.url}}{{page.url | append: "#disqus_thread"}}">?? Comments</a> -->
+      <span class="disqus-comment-count" data-disqus-identifier="{{page.title | slugify}}">
+        ?? Comments
+      </span>
+    </li>
+    {% endif %}
+  </ul>
+  {% if page.tags.size > 0 %}
+  <ul class="list-unstyled list-inline blog-tags">
+    <li>
+      {% if page.tags.size == 1 %}
+      <i class="fa fa-tag"></i>
+      {% else %}
+      <i class="fa fa-tags"></i>
+      {% endif %}
+
+      {% for post_tag in page.tags %}
+        {% assign tag = site.data.tags[post_tag] %}
+        {% if tag %}
+          <a href="{{site_url}}/blog/tag/{{post_tag}}/index.html">{{tag.name}}</a>
+        {% else %}
+          <a href="#">{{tag.name}}</a>
+        {% endif %}
+      {% endfor %}
+    </li>
+  </ul>
+  {% endif %}
+</div>
+

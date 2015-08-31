@@ -17,7 +17,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 paginate: 3
-paginate_path: "blog/page:num"
+paginate_path: "blog/post/page:num"
 
 # Build settings
 # markdown: kramdown

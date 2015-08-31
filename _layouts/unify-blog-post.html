@@ -18,16 +18,36 @@
   {% if page.post-id %}
     {% include slider/post-slider.html %}
   {% endif %}
-  <div class="heading heading-v4 jcs-page-heading margin-bottom-20">
-    <h2 class="page-title">{{page.title}}</h2>
-  </div>
   <div class="container content-md">
     <div class="row margin-bottom-30">
-      <div class="col-md-8 md-margin-bottom-30">
+      <div class="col-md-9 md-margin-bottom-30">
+        <!-- <div class="heading heading-v4 jcs-page-heading margin-bottom-20"> -->
+        {% include blog/template/blog-post-info.html %}
+        <div class="heading jcs-page-heading margin-bottom-20">
+          <h2>{{page.title}}</h2>
+        </div>
+
         {{content}}
+
+        <hr>
+        {% if page.comments %}
+        <a class="comment-control" href="#"><i class="fa fa-comments"></i> Show Comments</a>
+        <div class="comment-section">
+          <div>
+            {% include blog/disqus/disqus.html %}
+          </div>
+        </div>
+        {% else %}
+        <div>
+          <span><i class="fa fa-comments"></i> Comments closed for this post.</span>
+        </div>
+        {% endif %}
       </div>
-      <div class="col-md-4 md-margin-bottom-30">
-        {% include blog/template/author.html %}
+      <div class="col-md-3 md-margin-bottom-30">
+        <div class="jcs-page-heading">
+          {% include blog/template/author.html %}
+          {% include blog/template/tags.html %}
+        </div>
       </div>
     </div>
   </div>

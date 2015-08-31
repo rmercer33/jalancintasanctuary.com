@@ -2,10 +2,10 @@
 layout: unify-blog-post
 title: "Ethics and Support of Healing"
 date: 2015-08-27T22:13:33+08:00
-author-id: kate
-post-id: plans
+author: kate
 post-type: regular
 category: training
+tag: jcs
 ---
 
 The importance of providing a *truely safe* environment for healing cannot be overly

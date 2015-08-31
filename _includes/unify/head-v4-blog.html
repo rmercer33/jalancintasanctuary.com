@@ -6,13 +6,10 @@
 <meta name="description" content="">
 <meta name="author" content="Way of Love">
 
-{% if page.social %}
-{% include social/{{page.social | append: ".meta"}} %}
-{% elsif post.social %}
-{% include social/{{post.social | append: ".meta"}} %}
+{% if include.social %}
+{% include social/{{include.social | append: ".meta"}} %}
 {% else %}
-{% include social/twitter.meta %}
-{% include social/fb.meta %}
+{% include social/post.meta %}
 {% endif %}
 
 <!-- Favicon -->
