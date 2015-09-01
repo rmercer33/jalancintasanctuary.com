@@ -14,7 +14,10 @@
         {% if post.author %}
           <li>Author: {{site.data.authors[post.author].name}}</li>
           {% if post.category %}
-          <li>In <a href="#">{{post.category}}</a></li>
+          <li>In <a href="{{site_url}}{{site.data.categories[post.category].url}}">
+              {{site.data.categories[post.category].name}}
+            </a>
+          </li>
           {% endif %}
         {% else %}
           <li>AUTHOR NAME MISSING</li>

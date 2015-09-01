@@ -1,0 +1,12 @@
+<!--category sidebar-->
+<div class="headline headline-md"><h2>Categories</h2></div>
+<ul class="list-unstyled blog-tags margin-bottom-30">
+  {% for category in site.data.catlist %}
+  <li>
+    <a href="{{site_url}}{{category.url}}">
+      <i class="fa fa-folder"></i> {{category.name}}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+<!-- End Blog Category -->

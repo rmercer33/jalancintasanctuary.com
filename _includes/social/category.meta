@@ -1,0 +1,12 @@
+<!-- Open Graph data -->
+<meta property="og:url" content="{{site.url}}{{page.url | append: "index.html"}}" >
+{% if site.data.categories[page.category].social-images %}
+{% for image in site.data.categories[page.category].social-images %}
+<meta property="og:image" content="http://jalancintasanctuary.com{{image}}" >
+{% endfor %}
+{% endif %}
+<meta property="og:type" content="website" >
+<meta property="og:title" content="Posts categorized as: {{site.data.categories[page.category].name}}" >
+<meta property="og:site_name" content="Jalan Cinta Sanctuary Blog" >
+<meta property="fb:app_id" content="922095141145202" >
+<meta property="og:description" content="{{site.data.categories[page.category].desc}}">

@@ -7,7 +7,6 @@
 </head>
 
 <body>
-{% include blog/author/page-author.info %}
 {% if page.facebook %}
   {% include fb/fbapi.html %}
 {% endif %}
@@ -44,10 +43,7 @@
         {% endif %}
       </div>
       <div class="col-md-3 md-margin-bottom-30">
-        <div class="jcs-page-heading">
-          {% include blog/template/author.html %}
-          {% include blog/template/tags.html %}
-        </div>
+        {% include blog/template/sidebar.html %}
       </div>
     </div>
   </div>

@@ -17,9 +17,6 @@ social: blog
           <h2 id="page-title">The Jalan Cinta Gazette<br/><small>Recent Posts</small></h2>
         </div>
         {% for post in paginator.posts %}
-          {% comment %}
-          {% include blog/author/post-author.info %}
-          {% endcomment %}
           {% if post.type == 'regular' %}
             {% include blog/template/regular-post.html %}
           {% elsif post.type == 'slider' %}
@@ -63,10 +60,7 @@ social: blog
 
       <!-- Blog Sidebar -->
       <div class="col-md-3">
-        <div class="jcs-page-heading">
-          {% include blog/template/author.html %}
-          {% include blog/template/tags.html %}
-        </div>
+        {% include blog/template/sidebar.html %}
       </div>
       <!-- End Blog Sidebar -->
     </div>

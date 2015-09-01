@@ -1,0 +1,6 @@
+lessons:
+  name: Lessons
+  image: /public/img/blog/category/lessons/profile.jpg
+  social-images: /public/img/blog/category/lessons/profile.jpg
+  desc: "Posts categorized as: Lessons"
+  url: /blog/category/lessons/index.html
