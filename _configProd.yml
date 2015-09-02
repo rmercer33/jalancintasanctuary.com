@@ -9,9 +9,9 @@ description: >
   Jalan Cinta Sanctuary
 
 baseurl: "/"
-url: "http://jalancintasanctuary.net" 
+url: "http://jalancintasanctuary.com"
 
-fbapi: fbapi-net
+fbapi: fbapi-com
 
 twitter_username: jekyllrb
 github_username:  jekyll

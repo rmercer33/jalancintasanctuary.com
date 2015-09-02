@@ -1,0 +1,21 @@
+<script type="text/javascript">
+$(document).ready(function() {
+  "use strict";
+
+  $('.fb-share').on('click', function (e) {
+    e.preventDefault();
+    var share = {
+      method: 'share',
+      href: location.href
+    };
+
+    console.dir(share);
+
+    FB.ui(share, function(response) {
+      console.dir(response);
+    });
+
+  });
+});
+</script>
+

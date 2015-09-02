@@ -89,8 +89,11 @@ module.exports = function(grunt) {
       dev: {
         cmd: "open http://jalancintasanctuary.net"
       },
-      build: {
-        cmd: "jekyll build"
+      buildDev: {
+        cmd: "jekyll build --config _config.yml"
+      },
+      buildProd: {
+        cmd: "jekyll build --config _configProd.yml"
       }
     }
   });
@@ -98,7 +101,7 @@ module.exports = function(grunt) {
   grunt.registerTask("ppd", ["preprocess:dev"]);
   grunt.registerTask("ppp", ["preprocess:prod"]);
   grunt.registerTask("deploy-cdn", ["aws_s3:cdn"]);
-  grunt.registerTask("deploy-dev", ["preprocess:dev","exec:build","aws_s3:dev"]);
-  grunt.registerTask("deploy-prod", ["preprocess:prod","exec:build","aws_s3:prod"]);
+  grunt.registerTask("deploy-dev", ["preprocess:dev","exec:buildDev","aws_s3:dev"]);
+  grunt.registerTask("deploy-prod", ["preprocess:prod","exec:buildProd","aws_s3:prod"]);
 };
 

@@ -8,3 +8,8 @@ jcs:
   social-images: /public/img/blog/img/tags/jcs/jcs.jpg
   desc: "See what our authors have to say about the Jalan Cinta Sanctuary."
 
+teaching:
+  name: Teaching
+  social-images: /public/img/blog/img/tags/teaching/teaching.jpg
+  desc: "See what our authors have to say about the subject of teaching."
+

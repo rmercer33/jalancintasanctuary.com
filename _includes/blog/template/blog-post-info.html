@@ -15,6 +15,14 @@
       </span>
     </li>
     {% endif %}
+    {% if page.facebook %}
+    <li class="fb-like"
+      data-share="true"
+      data-href="{{site.url}}{{page.url}}"
+      data-show-faces="false"
+      data-layout="button">
+    </li>
+    {% endif %}
   </ul>
   {% if page.tags.size > 0 %}
   <ul class="list-unstyled list-inline blog-tags">

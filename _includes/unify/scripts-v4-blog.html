@@ -16,10 +16,15 @@
 <!-- JS Page Level -->
 <script type="text/javascript" src="/public/js/app.js"></script>
 <script type="text/javascript" src="/public/js/jcs.js"></script>
-<script type="text/javascript" src="/public/js/blog.js"></script>
 <script type="text/javascript" src="/public/js/plugins/fancy-box.js"></script>
 
+{% if include.load == "hypothesis" %}
+<script async defer src="//hypothes.is/embed.js"></script>
+{% endif %}
+
 {% include blog/disqus/disqus-count.html %}
+
+<script type="text/javascript" src="/public/js/blog.js"></script>
 
 <script type="text/javascript">
   jQuery(document).ready(function() {

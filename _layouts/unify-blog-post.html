@@ -8,7 +8,7 @@
 
 <body>
 {% if page.facebook %}
-  {% include fb/fbapi.html %}
+{% include fb/{{site.fbapi | append: '.html'}} %}
 {% endif %}
 <div class="wrapper">
   <div class="header-v4">
@@ -53,7 +53,7 @@
 </div><!--/wrapper-->
 
 <!-- JS Global Compulsory -->
-{% include unify/scripts-v4-blog.html %}
+{% include unify/scripts-v4-blog.html load="hypothesis" %}
 
 </body>
 </html>

@@ -1,8 +1,8 @@
 <!-- Open Graph data -->
-<meta property="og:url" content="http://jalancintasanctuary.com{{page.url}}" >
+<meta property="og:url" content="{{site.url}}{{page.url}}" >
 {% if page.social-images %}
 {% for image in page.social-images %}
-<meta property="og:image" content="http://jalancintasanctuary.com{{image}}" >
+<meta property="og:image" content="{{site.url}}{{image}}" >
 {% endfor %}
 {% endif %}
 <meta property="og:type" content="website" >

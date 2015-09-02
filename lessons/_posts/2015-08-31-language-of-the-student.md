@@ -1,13 +1,15 @@
 ---
 layout: unify-blog-post
-title: "Language of the Student"
+title: "Stepping Stone Support"
 date: 2015-08-31T23:19:58+08:00
 author: kate
 post-type: regular
-social-image: /public/img/blog/kate/img/computer-headache.jpg
-comments: false
+social-images: /public/img/blog/kate/img/computer-headache.jpg
+list-image: /public/img/blog/kate/img/computer-headache.jpg
+comments: true
+facebook: true
 category: lessons
-tags:
+tags: teaching
 
 ---
 
