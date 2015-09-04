@@ -18,13 +18,19 @@
 <script type="text/javascript" src="/public/js/jcs.js"></script>
 <script type="text/javascript" src="/public/js/plugins/fancy-box.js"></script>
 
-{% if include.load == "hypothesis" %}
+<script type="text/javascript" src="/public/js/blog.js"></script>
+
+{% if page.hypothesis %}
 <script async defer src="//hypothes.is/embed.js"></script>
+{% else %}
+<!-- page.hypothesis: {{page.hypothesis}} -->
 {% endif %}
 
+{% if page.comments %}
 {% include blog/disqus/disqus-count.html %}
-
-<script type="text/javascript" src="/public/js/blog.js"></script>
+{% else %}
+<!-- page.comments: {{page.comments}} -->
+{% endif %}
 
 <script type="text/javascript">
   jQuery(document).ready(function() {

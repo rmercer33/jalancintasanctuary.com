@@ -1,18 +1,29 @@
 <!--sidebar item for latest posts-->
 <div class="headline headline-md"><h2>Author Posts</h2></div>
+<ul class="list-unstyled blog-tags margin-bottom-30">
+  {% for author in site.data.authlist %}
+  <li>
+    <a href="{{site_url}}/blog/author/{{author.name}}/index.html">
+      <i class="{{author.fa}}"></i> {{author.fullname}}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+<!-- End Blog Tags -->
+
 <!-- Latest Links -->
-<div class="list-group">
-  <button type="button" class="list-group-item">
-    <a href="{{site_url}}/blog/author/kate/index.html">Kate Macnamara</a>
-  </button>
-  <button type="button" class="list-group-item">
-    <a href="{{site_url}}/blog/author/rod/index.html">Rod West</a>
-  </button>
-  <button type="button" class="list-group-item">
-    <a href="{{site_url}}/blog/author/sandy/index.html">Sandy Button</a>
-  </button>
-  <button type="button" class="list-group-item">
-    <a href="{{site_url}}/blog/author/rick/index.html">Rick Mercer</a>
-  </button>
-</div>
+<!-- <div class="list-group"> -->
+<!--   <button type="button" class="list-group-item"> -->
+<!--     <a href="{{site_url}}/blog/author/kate/index.html">Kate Macnamara</a> -->
+<!--   </button> -->
+<!--   <button type="button" class="list-group-item"> -->
+<!--     <a href="{{site_url}}/blog/author/rod/index.html">Rod West</a> -->
+<!--   </button> -->
+<!--   <button type="button" class="list-group-item"> -->
+<!--     <a href="{{site_url}}/blog/author/sandy/index.html">Sandy Button</a> -->
+<!--   </button> -->
+<!--   <button type="button" class="list-group-item"> -->
+<!--     <a href="{{site_url}}/blog/author/rick/index.html">Rick Mercer</a> -->
+<!--   </button> -->
+<!-- </div> -->
 

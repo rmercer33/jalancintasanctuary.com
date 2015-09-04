@@ -19,15 +19,17 @@
   {% endif %}
   <div class="container content-md">
     <div class="row margin-bottom-30">
-      <div class="col-md-9 md-margin-bottom-30">
-        <!-- <div class="heading heading-v4 jcs-page-heading margin-bottom-20"> -->
-        {% include blog/template/blog-post-info.html %}
-        <div class="heading jcs-page-heading margin-bottom-20">
-          <h2>{{page.title}}</h2>
-        </div>
+      <!-- <div id="main" class="col-md-9 md-margin-bottom-30"> -->
+      <div id="main" class="col-md-10 col-md-offset-1 md-margin-bottom-30">
+        <article>
+          {% include blog/template/blog-post-info.html %}
+          <header class="heading jcs-page-heading margin-bottom-20">
+            <h2>{{page.title}}</h2>
+          </header>
 
-        {{content}}
+          {{content}}
 
+        </article>
         <hr>
         {% if page.comments %}
         <a class="comment-control" href="#"><i class="fa fa-comments"></i> Show Comments</a>
@@ -42,8 +44,18 @@
         </div>
         {% endif %}
       </div>
-      <div class="col-md-3 md-margin-bottom-30">
-        {% include blog/template/sidebar.html %}
+
+      <div id="sb1" title="show sidebar" class="col-md-1">
+        <a class="control" href="#">
+          <i class="pull-right icon-custom rounded-2x icon-color-u fa fa-angle-double-left"></i>
+        </a>
+      </div>
+
+      <div id="sb3" title="hide sidebar" class="hide col-md-3 md-margin-bottom-30">
+        <a class="control" href="#">
+          <i class="pull-right icon-custom rounded-2x icon-color-u fa fa-angle-double-right"></i>
+        </a>
+        {% include blog/template/sidebar.html recent="load" %}
       </div>
     </div>
   </div>
@@ -53,7 +65,7 @@
 </div><!--/wrapper-->
 
 <!-- JS Global Compulsory -->
-{% include unify/scripts-v4-blog.html load="hypothesis" %}
+{% include unify/scripts-v4-blog-post.html %}
 
 </body>
 </html>

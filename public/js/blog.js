@@ -16,4 +16,27 @@ $(document).ready(function() {
     }
     $('.comment-section').toggle(500);
   })
+
+  // show sidbar
+  $('#sb1 a.control').on('click', function (e) {
+    e.preventDefault();
+
+    $('#sb3').removeClass('hide');
+    $('#sb1').addClass('hide');
+
+    $('#main').removeClass('col-md-10 col-md-offset-1');
+    $('#main').addClass('col-md-9');
+  });
+
+  // hide sidebar
+  $('#sb3 a.control').on('click', function (e) {
+    e.preventDefault();
+
+    $('#sb1').removeClass('hide');
+    $('#sb3').addClass('hide');
+
+    $('#main').removeClass('col-md-9');
+    $('#main').addClass('col-md-10 col-md-offset-1');
+  });
+
 });

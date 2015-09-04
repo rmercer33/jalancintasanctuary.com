@@ -13,10 +13,14 @@
     <div class="row">
       <!-- Blog All Posts -->
       <div class="col-md-9">
+        <h2>Posts sorted by author</h2>
         {% for post in {{site.posts | sort: 'author'}} %}
         <ul>
           <li>Id: {{post.id}}</li>
           <li>Author: {{post.author}}</li>
+          <li>Tags: {{post.tags}}</li>
+          <li>Category: {{post.category}}</li>
+          <li>Date: {{ post.date | date: "%b %-d, %Y" }}</li>
         </ul>
         {% endfor %}
       </div>
@@ -26,7 +30,7 @@
 </div><!--/wrapper-->
 
 <!-- JS Global Compulsory -->
-{% include unify/scripts-v4-blog.html %}
+{% include unify/scripts-v4-blog-list.html %}
 
 </body>
 </html>

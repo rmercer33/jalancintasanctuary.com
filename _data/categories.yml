@@ -4,3 +4,10 @@ lessons:
   social-images: /public/img/blog/category/lessons/profile.jpg
   desc: "Posts categorized as: Lessons"
   url: /blog/category/lessons/index.html
+
+ltw:
+  name: Learning to Whistle
+  image: /public/img/blog/category/ltw/profile.jpg
+  social-images: /public/img/blog/category/ltw/profile.jpg
+  desc: "Posts categorized as: Learning to Whistle"
+  url: /blog/category/ltw/index.html

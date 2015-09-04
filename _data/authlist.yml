@@ -1,0 +1,12 @@
+- name: rick
+  fullname: Rick Mercer
+  fa: fa fa-male
+- name: kate
+  fullname: Kate Macnamara
+  fa: fa fa-female
+- name: rod
+  fullname: Rod West
+  fa: fa fa-user-secret
+- name: sandy
+  fullname: Sandy Button
+  fa: fa fa-eye

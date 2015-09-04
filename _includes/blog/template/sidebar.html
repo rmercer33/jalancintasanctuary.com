@@ -2,5 +2,8 @@
   {% include blog/template/author.html %}
   {% include blog/template/category.html %}
   {% include blog/template/tags.html %}
+  {% if include.recent == "load" %}
+  {% include blog/template/recent.html %}
+  {% endif %}
 </div>
 

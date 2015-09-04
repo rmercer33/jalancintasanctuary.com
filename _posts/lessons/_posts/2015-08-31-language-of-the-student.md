@@ -8,6 +8,7 @@ social-images: /public/img/blog/kate/img/computer-headache.jpg
 list-image: /public/img/blog/kate/img/computer-headache.jpg
 comments: true
 facebook: true
+hypothesis: true
 category: lessons
 tags: teaching
 
