@@ -1,7 +1,7 @@
 ---
 layout: unify-blog-tag
-tag: teaching
-permalink: /blog/tag/teaching/
+tag: language
+permalink: /blog/tag/language/
 
 x-id: news
 

@@ -10,7 +10,7 @@ comments: true
 facebook: true
 hypothesis: true
 category: lessons
-tags: teaching
+tags: language
 
 ---
 

@@ -1,4 +1,4 @@
-exclude: [pandoc, project, rick, vim, parse, contact_.html, cdn, node_modules, aws-keys.json, package.json, Gruntfile.js]
+exclude: [rrm, pandoc, project, rick, vim, parse, contact_.html, cdn, node_modules, aws-keys.json, package.json, Gruntfile.js]
 
 gems: [ 'jekyll-pandoc-multiple-formats' ]
 

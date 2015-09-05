@@ -14,10 +14,7 @@ rod:
   name: Rod West
   image: /public/img/blog/rod/profile.png
   desc: "Rod is a very cool guy living way down under in Hobart, Tazmania"
-  social-images:
-    - /public/img/blog/rod/img/rod1.jpg
-    - /public/img/blog/rod/img/rod2.jpg
-    - /public/img/blog/rod/img/rod3.jpg
+  social-images: /public/img/blog/rod/profile.png
 
 sandy:
   name: Sandy Button
