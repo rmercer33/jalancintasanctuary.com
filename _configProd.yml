@@ -4,17 +4,16 @@ gems: [ 'jekyll-pandoc-multiple-formats' ]
 
 title: Jalan Cinta Sanctuary
 email: love@thewayoflove.com
+webmaster: "rmercer33@gmail.com (Rick Mercer)"
+editor: "sandy@thewayoflove.com (Sandy Button)"
 
 description: >
-  Jalan Cinta Sanctuary
+  News and Inspiration from Jalan Cinta Sanctuary in Ubud, Bali
 
 baseurl: "/"
 url: "http://jalancintasanctuary.com"
 
 fbapi: fbapi-com
-
-twitter_username: jekyllrb
-github_username:  jekyll
 
 paginate: 4
 paginate_path: "blog/post/page:num"

@@ -1,0 +1,38 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <link>{{ site.url }}</link>
+    <description>{{ site.description | xml_escape }}</description>
+    <language>en</language>
+    <atom:link href="{{ "rss/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <managingEditor>{{ site.editor }}</managingEditor>
+    <webMaster>{{ site.webmaster }}</webMaster>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+    <image>
+      <url>http://jalancintasanctuary.com/public/img/jcs/logo/jcs-logo-rss.png</url>
+      <title>Jalan Cinta Sanctuary</title>
+      <link>{{ site.url }}</link>
+    </image>
+    {% for post in site.posts limit:10 %}
+      <item>
+        <title>{{ post.title | xml_escape }}</title>
+        <description>{{ post.excerpt | xml_escape }}</description>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <link>{{ post.url | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>
+        {% for tag in post.tags %}
+        <category>{{ site.data.tags[tag].name | xml_escape }}</category>
+        {% endfor %}
+        {% if post.category %}
+        <category>{{ site.data.categories[post.category].name | xml_escape }}</category>
+        {% endif %}
+      </item>
+    {% endfor %}
+  </channel>
+</rss>
