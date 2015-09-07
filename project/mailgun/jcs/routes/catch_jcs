@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Inbound email routing rule for WoL account and jalancintasanctuary.com 
+# domain at mailgun.com
+#
+# route inbound mail not addressed to rick, sandy, kate, or rod
+# to rick@thewayoflove.com
+
+curl -s --user 'api:key-5d441d817e61642bedd485c2b2337deb' \
+    https://api.mailgun.net/v3/routes \
+    -F priority=10 \
+    -F description='to' \
+    -F expression='catch_all()' \
+    -F action='forward("rick@thewayoflove.com")' \
+    -F action='stop()'

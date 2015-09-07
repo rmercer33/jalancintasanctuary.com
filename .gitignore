@@ -1,16 +1,13 @@
-rick/
-project/
 pandoc/
 _site/
 _templates/
 _sass/
+work/
 pandoc/
-project/
 contact.html
 css/
 icons/
 tags/
-rrm/
 node_modules/
 aws-keys.json
 .*

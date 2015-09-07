@@ -1,0 +1,14 @@
+#!/bin/zsh
+
+subs=`curl -X "GET" "https://api.parse.com/1/classes/Subscriber" \
+	-H "X-Parse-REST-API-Key: JVOAB7M2mkBrlIYmRLHlW84SSJJXpDANVreyk3EQ" \
+	-H "X-Parse-Application-Id: SfjRvg0cm4Db87Bxqcn66vpFUlqUtI9lN3mtfQKu" \
+	-d $'X-Parse-Application-Id'`
+
+count=`echo $subs | jq '.results | length'`
+list=`echo $subs | jq -a -r '.results[] | .name + ":" + .email'`
+
+echo "Total Subscribers: $count"
+echo ""
+echo $list
+

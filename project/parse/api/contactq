@@ -1,0 +1,7 @@
+#!/bin/zsh
+
+curl -X "GET" "https://api.parse.com/1/classes/ContactInfo" \
+	-H "X-Parse-REST-API-Key: JVOAB7M2mkBrlIYmRLHlW84SSJJXpDANVreyk3EQ" \
+	-H "X-Parse-Application-Id: SfjRvg0cm4Db87Bxqcn66vpFUlqUtI9lN3mtfQKu" \
+	-d $'X-Parse-Application-Id' | jq '.results[] | {name: .name, email: .email, msg: .message}'
+
