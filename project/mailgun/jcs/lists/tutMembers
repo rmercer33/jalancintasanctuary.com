@@ -1,0 +1,22 @@
+#!/bin/zsh
+curl -s --user 'api:key-5d441d817e61642bedd485c2b2337deb' \
+    https://api.mailgun.net/v3/lists/tutlist@mail.jalancintasanctuary.com/members.json \
+    -F upsert=true \
+    -F members='
+[
+{
+  "name": "Rick",
+  "address": "rmercer33@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Rick Mercer",
+  "address": "rick@thewayoflove.com.com",
+  "subscribed": true
+},
+{
+  "name": "Love",
+  "address": "love@thewayoflove.com.com",
+  "subscribed": true
+}
+]' 

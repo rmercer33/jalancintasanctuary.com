@@ -1,0 +1,5 @@
+#!/bin/sh
+curl -s --user 'api:key-5d441d817e61642bedd485c2b2337deb' \
+    https://api.mailgun.net/v3/lists \
+    -F address='tutlist@mail.jalancintasanctuary.com' \
+    -F description='tutorial email list'

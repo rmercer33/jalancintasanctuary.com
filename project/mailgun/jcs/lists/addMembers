@@ -1,0 +1,330 @@
+#!/bin/zsh
+curl -s --user 'api:key-5d441d817e61642bedd485c2b2337deb' \
+    https://api.mailgun.net/v3/lists/subscribers@mail.jalancintasanctuary.com/members.json \
+    -F upsert=true \
+    -F members='
+[{
+  "name": "Eileen Grafton",
+  "address": "eileentmg@optusnet.com.au",
+  "subscribed": true
+},
+{
+  "name": "Julie Franklin",
+  "address": "julief8@yahoo.com",
+  "subscribed": true
+},
+{
+  "name": "Elisheva",
+  "address": "thegoddesssings@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Adam Christ Love",
+  "address": "adam@adamlove.us",
+  "subscribed": true
+},
+{
+  "name": "Bliss",
+  "address": "caro9bliss@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Susan",
+  "address": "cotter37@aol.com",
+  "subscribed": true
+},
+{
+  "name": "Loha",
+  "address": "lohagib@hawaii.rr.com",
+  "subscribed": true
+},
+{
+  "name": "Nura English",
+  "address": "claybrush@yahoo.com",
+  "subscribed": true
+},
+{
+  "name": "Pat Macnamara",
+  "address": "patmicmac@hotmail.com",
+  "subscribed": true
+},
+{
+  "name": "Raj Miles",
+  "address": "raj@livingvalues.com.au",
+  "subscribed": true
+},
+{
+  "name": "Beth Carseldine",
+  "address": "bcarseldine@ozemail.com.au",
+  "subscribed": true
+},
+{
+  "name": "Moira Snape",
+  "address": "moirasnape1@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Anna Crotty",
+  "address": "annacrotty@yahoo.com.au",
+  "subscribed": true
+},
+{
+  "name": "Debbie Baker",
+  "address": "dmbaker@homemail.com.au",
+  "subscribed": true
+},
+{
+  "name": "Mikemohit Kumar",
+  "address": "mikemohitkumar@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Steve Thompson ",
+  "address": "stevethompson.acim@yahoo.com",
+  "subscribed": true
+},
+{
+  "name": "Ellie Hyatt",
+  "address": "elliehyatt@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Deb ",
+  "address": "deb@diamondmastery.com",
+  "subscribed": true
+},
+{
+  "name": "Alaya Mudita Ketani",
+  "address": "hotai23@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Gillian Harris",
+  "address": "harrisgillian@hotmail.com",
+  "subscribed": true
+},
+{
+  "name": "Julie Bryant",
+  "address": "julie@nakeddragon.co.uk",
+  "subscribed": true
+},
+{
+  "name": "Neerana-Grace",
+  "address": "neeranagrace@live.com.au",
+  "subscribed": true
+},
+{
+  "name": "Derek Neilson",
+  "address": "graceiamnow@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Stephanie",
+  "address": "stephaniesinclaire@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Nikki Hobbs",
+  "address": "nnhobbs@westnet.com.au",
+  "subscribed": true
+},
+{
+  "name": "Robin Egan ",
+  "address": "peggottytroll@hotmail.com",
+  "subscribed": true
+},
+{
+  "name": "Adriaan van Spanje ",
+  "address": "avspanje@tiscali.nl",
+  "subscribed": true
+},
+{
+  "name": "Annamaree",
+  "address": "ambergaiabali@hotmail.com",
+  "subscribed": true
+},
+{
+  "name": "Charmaine",
+  "address": "charmainedu@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Leah Baldwin",
+  "address": "leahbaldwin@rocketmail.com",
+  "subscribed": true
+},
+{
+  "name": "Susan Beavers",
+  "address": "ssnbvrs@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Marga-Rose",
+  "address": "rb6398@yahoo.com",
+  "subscribed": true
+},
+{
+  "name": "Michele Hojnacki ",
+  "address": "lluvlight@comcast.net",
+  "subscribed": true
+},
+{
+  "name": "Joe Macnamara ",
+  "address": "joemac62@bigpond.com",
+  "subscribed": true
+},
+{
+  "name": "Angelina ",
+  "address": "loveinmotiin@earthlink.net",
+  "subscribed": true
+},
+{
+  "name": "Gus DeSiervo",
+  "address": "desiervo@maine.edu",
+  "subscribed": true
+},
+{
+  "name": "Beverly Young",
+  "address": "bevwom@aol.com",
+  "subscribed": true
+},
+{
+  "name": "Sybil June",
+  "address": "hippiesybil@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Gail",
+  "address": "gailsbiz@msn.com",
+  "subscribed": true
+},
+{
+  "name": "Sophia Magdalena",
+  "address": "verenamostyn@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Margi",
+  "address": "mrghggns@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Ken Hoover",
+  "address": "khoover@agt.net",
+  "subscribed": true
+},
+{
+  "name": "Janet Mercer",
+  "address": "mauimercer@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Joan Mercer",
+  "address": "kulajungle60@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Denise Rice",
+  "address": "denise.spirit@hotmail.co.uk",
+  "subscribed": true
+},
+{
+  "name": "John Crotty",
+  "address": "john_crotty@swissre.com",
+  "subscribed": true
+},
+{
+  "name": "Sarah",
+  "address": "shc311@verizon.net",
+  "subscribed": true
+},
+{
+  "name": "Robert",
+  "address": "rjderoche@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Rick",
+  "address": "rmercer33@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Sarajane Thomas",
+  "address": "sarajane.thomas@comcast.net",
+  "subscribed": true
+},
+{
+  "name": "Gisela Liess",
+  "address": "liess@sbcglobal.net",
+  "subscribed": true
+},
+{
+  "name": "Sophia Magdalena",
+  "address": "verenamostyn@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Astrid ",
+  "address": "astridmiller1@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Sandy",
+  "address": "sandy@thewayoflove.com",
+  "subscribed": true
+},
+{
+  "name": "Xavier OHalloran",
+  "address": "xeohalloran@gmx.com",
+  "subscribed": true
+},
+{
+  "name": "Sue Glebov",
+  "address": "mikesue.g@bigpond.com.au",
+  "subscribed": true
+},
+{
+  "name": "Preston Rich ",
+  "address": "pqrich00@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Marga",
+  "address": "rb6398@yahoo.com",
+  "subscribed": true
+},
+{
+  "name": "Simone",
+  "address": "simonewalkeracupuncture@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Vicki masters",
+  "address": "lonnievicki@cox.net",
+  "subscribed": true
+},
+{
+  "name": "Nan Burke",
+  "address": "nanareiki1@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Ivan",
+  "address": "ivan.domingo@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Kevin",
+  "address": "kevinsndh70@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Joan Mercer",
+  "address": "kulajungle60@gmail.com",
+  "subscribed": true
+},
+{
+  "name": "Jeff Roble",
+  "address": "rockenroble@hotmail.com",
+  "subscribed": true
+}]' 
