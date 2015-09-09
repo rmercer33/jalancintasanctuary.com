@@ -1,0 +1,37 @@
+---
+layout: unify-v4
+feature: profile
+---
+
+<!--=== Profile ===-->
+<div class="container content profile">
+  <div class="row">
+    <div class="col-md-3 md-margin-bottom-40">
+      {% include profile/sidebar.html %}
+    </div>
+    <div class="col-md-9">
+      <div class="profile-body margin-bottom-20">
+        <div class="tab-v1">
+          <ul class="nav nav-justified nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#profile">Profile</a></li>
+            {% if page.author == "kate" %}
+              {% include profile/kate-tab.html %}
+            {% endif %}
+          </ul>
+          <div class="tab-content">
+            <div id="profile" class="profile-edit tab-pane fade in active">
+              {{ content }}
+              <br>
+            </div>
+            {% if page.author == "kate" %}
+              {% include profile/kate-tab-content.html %}
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Profile Content -->
+  </div><!--/end row-->
+</div>
+<!--=== End Profile ===-->
+

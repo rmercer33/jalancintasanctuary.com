@@ -3,22 +3,30 @@ rick:
   image: /public/img/blog/rick/profile.jpg
   social-images: /public/img/blog/rick/profile.jpg
   desc: "Rick lives and loves in Ubud, Bali"
+  profile-image: /public/img/blog/rick/profile.jpg
+  profile-url: /profile/rick/index.html
 
 kate:
   name: Kate Macnamara
   image: /public/img/blog/kate/profile.jpg
   social-images: /public/img/blog/kate/profile.jpg
   desc: "Kate is a gifted Consellor and author living in Albury, Australia"
+  profile-image: /public/img/blog/kate/profile1.jpg
+  profile-url: /profile/kate/index.html
 
 rod:
   name: Rod West
   image: /public/img/blog/rod/profile.png
   desc: "Rod is a very cool guy living way down under in Hobart, Tazmania"
   social-images: /public/img/blog/rod/profile.png
+  profile-image: /public/img/blog/rod/profile.png
+  profile-url: /profile/rod/index.html
 
 sandy:
   name: Sandy Button
   image: /public/img/blog/sandy/profile.jpg
   social-images: /public/img/blog/sandy/profile.jpg
   desc: "Sandy lives and loves in Ubud, Bali"
+  profile-image: /public/img/blog/sandy/profile.jpg
+  profile-url: /profile/sandy/index.html
 

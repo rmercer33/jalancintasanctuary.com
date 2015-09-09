@@ -9,7 +9,6 @@
 {% if page.social %}
 {% include social/{{page.social | append: ".meta"}} %}
 {% else %}
-{% include social/twitter.meta %}
 {% include social/fb.meta %}
 {% endif %}
 
@@ -61,6 +60,10 @@
 {% endif %}
 {% if page.id == "error" %}
 <link rel="stylesheet" href="/public/css/pages/page_404_error.css">
+{% endif %}
+
+{% if page.feature == "profile" %}
+<link rel="stylesheet" href="/public/css/profile.css">
 {% endif %}
 
 <!-- CSS Customization -->

@@ -1,0 +1,19 @@
+<img class="img-responsive rounded profile-img margin-bottom-20" 
+src="{{ site.data.authors[page.author].profile-image}}" alt="">
+
+<div class="headline headline-md"><h2>Member Profiles</h2></div>
+<ul class="list-group sidebar-nav-v1 margin-bottom-40" id="sidebar-nav-1">
+{% for author in site.data.authlist %}
+  {% if author.name != page.author %}
+    {% assign url = site.data.authors[author.name].profile-url %}
+  {% else %}
+    {% assign url = "#" %}
+  {% endif %}
+  <li class="list-group-item">
+  <a href="{{url}}">
+      <i class="{{author.fa}}"></i> {{author.fullname}}
+    </a>
+  </li>
+{% endfor %}
+</ul>
+
