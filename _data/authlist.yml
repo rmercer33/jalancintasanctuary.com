@@ -1,12 +1,25 @@
+- name: founders
+  fullname: Introduction
+  fa: fa fa-users
+  profile: true
+  blog: false
 - name: rick
   fullname: Rick Mercer
   fa: fa fa-male
+  profile: true
+  blog: true
 - name: kate
   fullname: Kate Macnamara
   fa: fa fa-female
+  profile: true
+  blog: true
 - name: rod
   fullname: Rod West
   fa: fa fa-user-secret
+  profile: true
+  blog: true
 - name: sandy
   fullname: Sandy Button
   fa: fa fa-eye
+  profile: true
+  blog: true

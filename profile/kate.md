@@ -3,11 +3,12 @@ layout: unify-profile
 title: Kate Macnamara 
 permalink: /profile/kate/
 author: kate
-id: profile
+id: kate
+social: profile
 
 ---
 
-## Kate Macnamara BA Couns. Dip.Prof.Couns. MASC(Ad.CS) BSYA(Mn) MACA {#ph2 .h2-prof}
+## Kate Macnamara <small>BA Couns. Dip.Prof.Couns. MASC(Ad.CS) BSYA(Mn) MACA</small> {#ph2 .h2-prof}
 ### Counsellor, Psychotherapist, Author, Mystic {#ph3 .h3-prof}
 
 Kate works in her private counselling practice, *Jesmry Counselling Services*, in

@@ -14,6 +14,7 @@ baseurl: "/"
 url: "http://jalancintasanctuary.com"
 
 fbapi: fbapi-com
+env: prod
 
 paginate: 4
 paginate_path: "blog/post/page:num"

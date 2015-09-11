@@ -2,11 +2,13 @@
 <div class="headline headline-md"><h2>Author Posts</h2></div>
 <ul class="list-unstyled blog-tags margin-bottom-30">
   {% for author in site.data.authlist %}
+  {% if author.blog %}
   <li>
     <a href="{{site_url}}/blog/author/{{author.name}}/index.html">
       <i class="{{author.fa}}"></i> {{author.fullname}}
     </a>
   </li>
+  {% endif %}
   {% endfor %}
 </ul>
 <!-- End Blog Tags -->

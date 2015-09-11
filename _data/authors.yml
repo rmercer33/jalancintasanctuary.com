@@ -1,3 +1,10 @@
+founders:
+  name: Founding Members
+  image: /public/img/jcs/members/fmTropical.jpg
+  social-image: /public/img/jcs/members/fmTropical.jpg
+  profile-image: /public/img/jcs/members/fmTropical.jpg
+  profile-url: /profile/founders/index.html
+
 rick:
   name: Rick Mercer
   image: /public/img/blog/rick/profile.jpg

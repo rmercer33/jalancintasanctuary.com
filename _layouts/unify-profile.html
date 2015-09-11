@@ -13,9 +13,19 @@ feature: profile
       <div class="profile-body margin-bottom-20">
         <div class="tab-v1">
           <ul class="nav nav-justified nav-tabs">
+            {% if page.author == "founders" %}
+            <li class="active"><a data-toggle="tab" href="#profile">&nbsp;</a></li>
+            {% else %}
             <li class="active"><a data-toggle="tab" href="#profile">Profile</a></li>
+            {% endif %}
             {% if page.author == "kate" %}
               {% include profile/kate-tab.html %}
+            {% elsif page.author == "rod" %}
+              {% include profile/rod-tab.html %}
+            {% elsif page.author == "sandy" %}
+              {% include profile/sandy-tab.html %}
+            {% elsif page.author == "rick" %}
+              {% include profile/rick-tab.html %}
             {% endif %}
           </ul>
           <div class="tab-content">
@@ -25,6 +35,12 @@ feature: profile
             </div>
             {% if page.author == "kate" %}
               {% include profile/kate-tab-content.html %}
+            {% elsif page.author == "rod" %}
+              {% include profile/rod-tab-content.html %}
+            {% elsif page.author == "sandy" %}
+              {% include profile/sandy-tab-content.html %}
+            {% elsif page.author == "rick" %}
+              {% include profile/rick-tab-content.html %}
             {% endif %}
           </div>
         </div>

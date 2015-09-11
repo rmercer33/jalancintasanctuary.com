@@ -64,7 +64,7 @@ module.exports = function(grunt) {
       },
       dev: {
         files: [
-          {src: './contact_.html', dest: './contact.html'}
+          {src: './contact_.html', dest: './contact.xxx'}
         ],
         options: {
           context: {
@@ -75,7 +75,7 @@ module.exports = function(grunt) {
       },
       prod: {
         files: [
-          {src: './contact_.html', dest: './contact.html'}
+          {src: './contact_.html', dest: './contact.xxx'}
         ],
         options: {
           context: {
@@ -98,10 +98,8 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask("ppd", ["preprocess:dev"]);
-  grunt.registerTask("ppp", ["preprocess:prod"]);
   grunt.registerTask("deploy-cdn", ["aws_s3:cdn"]);
-  grunt.registerTask("deploy-dev", ["preprocess:dev","exec:buildDev","aws_s3:dev"]);
-  grunt.registerTask("deploy-prod", ["preprocess:prod","exec:buildProd","aws_s3:prod"]);
+  grunt.registerTask("deploy-dev",  ["exec:buildDev","aws_s3:dev"]);
+  grunt.registerTask("deploy-prod", ["exec:buildProd","aws_s3:prod"]);
 };
 

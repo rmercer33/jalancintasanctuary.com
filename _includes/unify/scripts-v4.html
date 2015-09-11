@@ -36,6 +36,10 @@
 <script type="text/javascript" src="/public/js/plans.js"></script>
 {% endif %}
 
+{% if page.feature == "profile" %}
+<script src='https://www.google.com/recaptcha/api.js'></script>
+{% endif %}
+
 {% if page.id == "members" %}
 <script type="text/javascript" src="/public/js/fm.js"></script>
 {% endif %}
@@ -55,7 +59,7 @@
       {% include map/{{page.banner}}.init %}
     {% endif %}
     {% if page.id == "plans" %}
-			$('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="tooltip"]').tooltip();
     {% endif %}
     {% if page.annotator %}
       {% include annotator/annotator.init %}

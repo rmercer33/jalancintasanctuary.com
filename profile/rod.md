@@ -4,6 +4,7 @@ title: Rod West
 permalink: /profile/rod/
 author: rod
 id: rod
+social: profile
 
 ---
 

@@ -89,9 +89,10 @@ $(document).ready(function() {
 
     var target = $(e.target);
     var data = {
-      name: $(target).find("#name").val(),
-      email: $(target).find("#email").val(),
-      phone: $(target).find("#phone").val(),
+      destination: $(target).find("[name='destination']").val(),
+      name: $(target).find("[name='name']").val(),
+      email: $(target).find("[name='email']").val(),
+      phone: $(target).find("[name='phone']").val(),
       message: $(target).find("[name='message']").val()
     };
 
@@ -104,10 +105,10 @@ $(document).ready(function() {
           .html("<p><i class='fa fa-check'></i> Thank you " 
             + data.name + ". You have made contact.</p>");
 
-        $(target).find("#name").val("");
-        $(target).find("#email").val("");
-        $(target).find("#phone").val("");
-        $(target).find("[name='message']").val("");
+        $(target).find("[name='name']").val(""),
+        $(target).find("[name='email']").val(""),
+        $(target).find("[name='phone']").val(""),
+        $(target).find("[name='message']").val("")
       },
       error: function() {
         $(".form-message")
@@ -121,6 +122,7 @@ $(document).ready(function() {
     var activity = new Activity();
     var jcsData = store.get('jcsActivity');
     jcsData.contact = {
+      destination: data.destination,
       name: data.name,
       email: data.email,
       phone: data.phone
