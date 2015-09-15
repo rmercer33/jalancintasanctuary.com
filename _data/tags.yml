@@ -3,3 +3,7 @@ language:
   social-images: /public/img/blog/tag/language/language.jpg
   desc: "See what our authors have to say about the subject of language."
 
+progress:
+  name: Project Progress
+  social-images: /public/img/blog/tag/language/language.jpg
+  desc: "See what our authors have to say about the JCS project."

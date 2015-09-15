@@ -8,3 +8,8 @@ lessons:
   - /public/img/blog/category/lessons/lesson3.jpg
   desc: "Posts categorized as: Life Lessons"
   url: /blog/category/lessons/index.html
+
+jcs: 
+  name: Jalan Cinta Sanctuary 
+  desc: "Posts categorized as: Jalan Cinta Sanctuary"
+  url: /blog/category/jcs/index.html

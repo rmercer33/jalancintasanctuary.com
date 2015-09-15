@@ -8,9 +8,20 @@ social: profile
 
 ---
 
-## Who Am I? {#who .h2-prof .margin-bottom-20}
+## Experience {#who .h2-prof .margin-bottom-20}
 
-*I am a cool dudette!!!*
+Sandy has extensive experience in the areas of training, administration,
+management, hospitality, quality control and spirituality.
 
-What more can I say?
+KEY EMPLOYMENT HISTORY
+
+* CEO, Heartfelt Publishing PMA
+* National Manager, Academie Accor – A division of Accor Asia Pacific Hotels and Resort
+* Campus Director, Senior Trainer and Vocational Placement Officer, Hospitality Australia 2000 Pty Ltd
+
+QUALIFICATIONS
+
+* Certificate VI in Training and Assessment
+* Diploma in Hospitality
+* Certificate of Applied Social Sciences 
 
