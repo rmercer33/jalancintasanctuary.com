@@ -29,14 +29,21 @@
 
       <a class="btn-u btn-u-sm" href="{{post.url}}">Read More</a>
 
-      {% if post.comments %}
+      {% if post.comments or post.sticky %}
       <ul class="post-shares">
+        {% if post.comments %}
         <li>
           <i class="rounded-x icon-speech"></i>
           <span class="disqus-comment-count" data-disqus-identifier="{{post.title | slugify}}">
             ?
           </span>
         </li>
+        {% endif %}
+        {% if post.sticky %}
+        <li>
+          <i class="rounded-x icon-flag"></i>
+        </li>
+        {% endif %}
       </ul>
       {% endif %}
     </div>

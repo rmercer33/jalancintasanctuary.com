@@ -11,6 +11,7 @@ facebook: true
 hypothesis: true
 category: lessons
 tags: language
+sticky: true
 
 ---
 

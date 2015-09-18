@@ -28,20 +28,20 @@
           <h2 id="page-title">Posts by Category<br/>
             <small>{{site.data.categories[page.category].name}}</small></h2>
         </div>
-        {% for post in site.categories[page.category] %}
-          {% if post.category != page.category %}
-            {% continue %}
+        {% for i in (1..2) %}
+          {% assign showSticky = false %}
+          {% if forloop.first %}
+            {% assign showSticky = true %}
           {% endif %}
-          {% if post.type == 'regular' %}
-            {% include blog/template/regular-post.html %}
-          {% elsif post.type == 'slider' %}
-            {% include blog/template/slider-post.html %}
-          {% elsif post.type == 'vimeo' %}
-            {% include blog/template/vimeo-post.html %}
-          {% else %}
-            {% include blog/template/regular-post.html %}
-          {% endif %}
-          <div class="clearfix margin-bottom-20"><hr></div>
+          {% for post in site.categories[page.category] %}
+            {% if post.category != page.category %}
+              {% continue %}
+            {% endif %}
+            {% include blog/template/router.html %}
+            {% if output %}
+            <div class="clearfix margin-bottom-20"><hr></div>
+            {% endif %}
+          {% endfor %}
         {% endfor %}
       </div>
       <!-- End Blog All Posts -->

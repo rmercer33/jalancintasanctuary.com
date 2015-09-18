@@ -13,15 +13,50 @@
     <div class="row">
       <!-- Blog All Posts -->
       <div class="col-md-9">
-        <h2>Posts sorted by author</h2>
-        {% for post in {{site.posts | sort: 'author'}} %}
-        <ul>
-          <li>Id: {{post.id}}</li>
-          <li>Author: {{post.author}}</li>
-          <li>Tags: {{post.tags}}</li>
-          <li>Category: {{post.category}}</li>
-          <li>Date: {{ post.date | date: "%b %-d, %Y" }}</li>
-        </ul>
+        <h2>Posts by Category</h2>
+        {% for cat in {{site.categories}} %}
+          {% assign catId = cat | first %}
+          {% assign catName = site.data.categories[catId].name %}
+          <h3>{{catName}}</h3>
+          {% for posts in cat %}
+            <ol>
+            {% for counter in (1..2) %}
+              <!--show sticky posts first-->
+              {% assign showSticky = false %}
+              {% if forloop.first %}
+                {% assign showSticky = true %}
+              {% endif %}
+              {% for post in posts %}
+
+                {% if post.url %}
+                  {% if showSticky %}
+                    {% if post.sticky %}
+                    <li>
+                      <a href="{{post.url}}">{{post.title}}</a>
+                      <p>{{post.date | date_to_string}}</p>
+                      <p>sticky: {{post.sticky}}</p>
+                      <p>
+                        {{post.excerpt}}
+                      </p>
+                    </li>
+                    {% endif %}
+                  {% else %}
+                    {% if post.sticky != true %}
+                    <li>
+                      <a href="{{post.url}}">{{post.title}}</a>
+                      <p>{{post.date | date_to_string}}</p>
+                      <p>sticky: {{post.sticky}}</p>
+                      <p>
+                        {{post.excerpt}}
+                      </p>
+                    </li>
+                    {% endif %}
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+            </ol>
+          {% endfor %}
         {% endfor %}
       </div>
     </div>
