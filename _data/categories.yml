@@ -13,3 +13,8 @@ jcs:
   name: Jalan Cinta Sanctuary 
   desc: "Posts categorized as: Jalan Cinta Sanctuary"
   url: /blog/category/jcs/index.html
+
+sol: 
+  name: Seeds of Light
+  desc: "Posts categorized as: Seeds of Light"
+  url: /blog/category/sol/index.html

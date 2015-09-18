@@ -1,5 +1,8 @@
-- name: Lessons
+- name: Life Lessons
   url: /blog/category/lessons/index.html
 
 - name: Jalan Cinta Sanctuary
   url: /blog/category/jcs/index.html
+
+- name: Seeds of Light
+  url: /blog/category/sol/index.html

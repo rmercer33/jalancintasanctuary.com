@@ -27,7 +27,7 @@ atheist, or a Catholic. Tell them the Truth:
 
 ----
 
-Beside that &ndash; *as if were not enough* &ndash; I have extensive technical experience installing,
+Beside that &ndash; *as if that were not enough* &ndash; I have extensive technical experience installing,
 configuring, developing, and supporting software solutions on projects both large
 and small for government and industry.
 
