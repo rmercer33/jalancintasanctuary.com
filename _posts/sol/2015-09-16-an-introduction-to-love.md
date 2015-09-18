@@ -11,6 +11,7 @@ facebook: true
 hypothesis: true
 category: sol
 tags: love
+sticky: true
 excerpt: >
   <div class="yml-excerpt">
   The keystone of any genuine spirituality is Love – the journey of awakening to 

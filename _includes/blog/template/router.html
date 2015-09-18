@@ -1,0 +1,37 @@
+<!--if showSticky then show only posts where post.sticky == true-->
+<!--if not showSticky then show posts where post.sticky == false-->
+{% assign output = false %}
+{% if showSticky %}
+  {% if post.sticky %}
+    {% if post.type == 'regular' %}
+      {% include blog/template/regular-post.html %}
+      {% assign output = true %}
+    {% elsif post.type == 'slider' %}
+      {% include blog/template/slider-post.html %}
+      {% assign output = true %}
+    {% elsif post.type == 'vimeo' %}
+      {% include blog/template/vimeo-post.html %}
+      {% assign output = true %}
+    {% else %}
+      {% include blog/template/regular-post.html %}
+      {% assign output = true %}
+    {% endif %}
+  {% endif %}
+{% else %}
+  {% if post.sticky != true %}
+    {% if post.type == 'regular' %}
+      {% include blog/template/regular-post.html %}
+      {% assign output = true %}
+    {% elsif post.type == 'slider' %}
+      {% include blog/template/slider-post.html %}
+      {% assign output = true %}
+    {% elsif post.type == 'vimeo' %}
+      {% include blog/template/vimeo-post.html %}
+      {% assign output = true %}
+    {% else %}
+      {% include blog/template/regular-post.html %}
+      {% assign output = true %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
