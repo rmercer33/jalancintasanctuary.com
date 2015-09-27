@@ -24,7 +24,7 @@
         <article class="jcs-blog">
           {% include blog/template/blog-post-info.html %}
           <header class="heading jcs-page-heading margin-bottom-20">
-            <h2>{{page.title}}</h2>
+            <h2 id="post-title">{{page.title}}</h2>
           </header>
 
           {{content}}
@@ -32,7 +32,9 @@
         </article>
         <hr>
         {% if page.comments %}
-        <a class="comment-control" href="#"><i class="fa fa-comments"></i> Show Comments</a>
+        <a id="post-comments" class="comment-control" href="#">
+          <i class="fa fa-comments"></i> Show Comments
+        </a>
         <div class="comment-section">
           <div>
             {% include blog/disqus/disqus.html %}
@@ -46,14 +48,20 @@
       </div>
 
       <div id="sb1" title="show sidebar" class="col-md-1">
-        <a class="control" href="#">
+        <a id="sb-control" class="control" href="#">
           <i class="pull-right icon-custom rounded-2x icon-color-u fa fa-angle-double-left"></i>
+        </a>
+        <a id="tour" href="#" title="Tour this page">
+          <i class="pull-right icon-custom rounded-2x icon-color-u fa fa-magic"></i>
         </a>
       </div>
 
       <div id="sb3" title="hide sidebar" class="hide col-md-3 md-margin-bottom-30">
-        <a class="control" href="#">
+        <a id="sb-control" class="control" href="#">
           <i class="pull-right icon-custom rounded-2x icon-color-u fa fa-angle-double-right"></i>
+        </a>
+        <a id="tour" href="#" title="Tour this page">
+          <i class="pull-right icon-custom rounded-2x icon-color-u fa fa-magic"></i>
         </a>
         {% include blog/template/sidebar.html recent="load" %}
       </div>

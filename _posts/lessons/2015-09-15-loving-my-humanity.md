@@ -25,13 +25,13 @@ deeper way. The *Way of Love* has been teaching me what this ‘way’ actually 
 <img class="blog-img-right pull-right margin-bottom-20 img-responsive rounded"
     width="30%" src="/public/img/blog/kate/img/Kate.jpg" />
 
-During these last three months since the pilgrimage to Israel and France I have
-welcomed a familiar dreaded response in me where I feel myself begin to
-implode, I become numb yet devastated. If I attempt to share I witness that my
-ability to communicate becomes poor as the outer cerebral cortex shuts down and
-the limbic system kicks in. I feel alone, isolated and shut down.  I have felt
-distressed that this response still occurs even though these days to
-a lessening degree. 
+<span id="tour-stop-h">During</span> these last three months since the
+pilgrimage to Israel and France I have welcomed a familiar dreaded response in
+me where I feel myself begin to implode, I become numb yet devastated. If
+I attempt to share I witness that my ability to communicate becomes poor as the
+outer cerebral cortex shuts down and the limbic system kicks in. I feel alone,
+isolated and shut down.  I have felt distressed that this response still occurs
+even though these days to a lessening degree. 
 
 I have learnt to breathe and inquire deeply into my mind to heal the taproots
 of fear based beliefs in psychological training and in the Way of Mastery and

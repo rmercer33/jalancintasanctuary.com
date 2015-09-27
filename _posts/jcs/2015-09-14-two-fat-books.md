@@ -13,10 +13,10 @@ category: jcs
 tags: progress
 ---
 
-Sandy called and said, "Are you busy? Come on over." She didn't say any more
-than that, but I did feel something was happening that she wanted me to be part
-of. So, I pulled away from what I was doing and begin the 2-minute walk to her
-house.
+<span id="tour-stop-h">Sandy called and said</span>, "Are you busy? Come on
+over." She didn't say any more than that, but I did feel something was
+happening that she wanted me to be part of. So, I pulled away from what I was
+doing and begin the 2-minute walk to her house.
 
 <img class="blog-img-left rounded-2x img-responsive pull-left" width="50%" 
   src="/public/img/blog/rick/img/fatbook1.jpg" />

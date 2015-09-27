@@ -11,7 +11,6 @@ facebook: true
 hypothesis: true
 category: lessons
 tags: language
-sticky: true
 
 ---
 
@@ -22,14 +21,14 @@ a huge difference.
 To share a little about what has just unfolded, if I may, as it has left me
 smiling so much.
 
-I hadn't been smiling with my computer as for some reason my Outlook email was
-telling me there was something wrong with a file and it couldn't open. Now this
-weekend I had wanted to do some work with my next book that involved stored
-emails, so I was feeling a grrrr moment and the computer guy who usually helps
-me wasn't available until Monday, grrrr, an opportunity for breathing. I had
-been to the "help" section of Outlook and it gave me really clear
-guidelines to go to drive:/Program... That sounds great but where the **!@#$%^&** do
-I find the "drive thingo?"
+I hadn't been <span id="tour-stop-h">smiling</span> with my computer as for
+some reason my Outlook email was telling me there was something wrong with
+a file and it couldn't open. Now this weekend I had wanted to do some work with
+my next book that involved stored emails, so I was feeling a grrrr moment and
+the computer guy who usually helps me wasn't available until Monday, grrrr, an
+opportunity for breathing. I had been to the "help" section of Outlook and it
+gave me really clear guidelines to go to drive:/Program... That sounds great
+but where the **!@#$%^&** do I find the "drive thingo?"
 
 Today we were all sharing on Skype about the language we use on our website to
 convey what Jalan Cinta Sactuary is all about so others can understand and

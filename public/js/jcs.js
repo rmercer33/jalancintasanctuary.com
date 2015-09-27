@@ -147,5 +147,15 @@ var jcs = (function () {
       }
       setStore("jcsActivity", jcsActivity);
     },
+    featureDisplayedBefore(item) {
+      var value = store.get(item);
+
+      if (typeof value === "undefined") {
+        store.set(item, {displayed: true});
+        return false;
+      }
+
+      return true;
+    }
   };
 })();

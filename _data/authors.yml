@@ -16,7 +16,9 @@ rick:
 kate:
   name: Kate Macnamara
   image: /public/img/blog/kate/profile.jpg
-  social-images: /public/img/blog/kate/profile.jpg
+  social-images: 
+    - /public/img/blog/kate/profile.jpg
+    - /public/img/blog/kate/img/retreat-banner.png
   desc: "Kate is a gifted Consellor and author living in Albury, Australia"
   profile-image: /public/img/blog/kate/profile1.jpg
   profile-url: /profile/kate/index.html

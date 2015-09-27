@@ -24,6 +24,8 @@ atheist, or a Catholic. Tell them the Truth:
 > to the sun. I am the effect of God’s Love.*
 >
 > *And, I stand before you to love you.*
+>
+> <small>from [*Way of the Heart*](http://www.wayofmastery.com/store/index.1.html) - Lesson 4</small>
 
 ----
 
@@ -32,7 +34,7 @@ configuring, developing, and supporting software solutions on projects both larg
 and small for government and industry.
 
 I support Jalan Cinta Sanctuary through development of the website and technical components of 
-other projects. 
+other projects.
 
 Please contact me directly if you notice any problems with the website or want to suggest a
 great idea for a new website feature or technically related project.

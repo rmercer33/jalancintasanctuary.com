@@ -18,3 +18,8 @@ sol:
   name: Seeds of Light
   desc: "Posts categorized as: Seeds of Light"
   url: /blog/category/sol/index.html
+
+cm: 
+  name: Christ Mind
+  desc: "Posts categorized as: Christ Mind"
+  url: /blog/category/cm/index.html

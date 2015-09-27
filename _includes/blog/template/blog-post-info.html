@@ -3,7 +3,7 @@
   <ul class="list-unstyled list-inline blog-info">
     <li><i class="fa fa-calendar"></i> {{ page.date | date: "%b %-d, %Y" }}</li>
     <li><i class="fa fa-pencil"></i> 
-    <a href="{{site_url}}/blog/author/{{page.author}}/index.html">
+    <a id="post-author" href="{{site_url}}/blog/author/{{page.author}}/index.html">
       {{site.data.authors[page.author].name}}
     </a>
     </li>
@@ -24,8 +24,17 @@
     </li>
     {% endif %}
   </ul>
-  {% if page.tags.size > 0 %}
-  <ul class="list-unstyled list-inline blog-tags">
+  {% if page.tags.size > 0 or page.category %}
+  <ul id="post-category" class="list-unstyled list-inline blog-tags">
+    {% if page.category %}
+    <li>
+      <i class="fa fa-folder"></i>
+      <a href="{{site_url}}/blog/category/{{page.category}}/index.html">
+        {{site.data.categories[page.category].name}}
+      </a>
+    </li>
+    {% endif %}
+    {% if page.tags.size > 0 %}
     <li>
       {% if page.tags.size == 1 %}
       <i class="fa fa-tag"></i>
@@ -42,6 +51,7 @@
         {% endif %}
       {% endfor %}
     </li>
+    {% endif %}
   </ul>
   {% endif %}
 </div>

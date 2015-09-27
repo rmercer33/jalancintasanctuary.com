@@ -17,3 +17,8 @@ questions:
   name: Questions
   social-images: 
   desc: "See what our authors have to say about asking questions."
+
+annotation:
+  name: Annotation
+  social-images: 
+  desc: "Learn about JCS support for Annotation."
