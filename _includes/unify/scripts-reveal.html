@@ -1,0 +1,14 @@
+<script src="/public/js/plugins/reveal/head.min.js"></script>
+<script src="/public/js/plugins/reveal/reveal.js"></script>
+
+<script type="text/javascript">
+  {% if page.reveal %}
+    {% include reveal/{{page.reveal | append: '.config'}} %}
+  {% endif %}
+</script>
+<!--[if lt IE 9]>
+    <script src="/public/plugins/respond.js"></script>
+    <script src="/public/plugins/html5shiv.js"></script>
+    <script src="/public/plugins/placeholder-IE-fixes.js"></script>
+<![endif]-->
+
