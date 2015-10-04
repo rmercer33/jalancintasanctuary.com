@@ -1,6 +1,7 @@
 ---
 layout: unify-blog-post
 title: "What Questions Are You Asking?"
+date: 2015-09-28T21:40:10+08:00
 author: sandy
 post-type: regular
 list-image: /public/img/blog/sandy/img/questions.png
@@ -38,8 +39,9 @@ or am I actually living the life that truly brings me joy? Do I feel an inner
 peacefulness or is there an inner gnawing and dissatisfaction?”
 
 While the form these questions take can appear different for each of us, the
-life we shape through our choices begins to reveal the answer we selected, even
-if the moment of that selection is now hidden in the mist of our past.
+life we shape through our <span id="tour-stop-h">choices begins to</span>
+reveal the answer we selected, even if the moment of that selection is now
+hidden in the mist of our past.
 
 By looking closely at the questions we ask daily, we discover where our
 allegiance lies; is it in survival or abundance, suffering or happiness,

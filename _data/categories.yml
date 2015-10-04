@@ -23,3 +23,8 @@ cm:
   name: Christ Mind
   desc: "Posts categorized as: Christ Mind"
   url: /blog/category/cm/index.html
+
+god: 
+  name: God
+  desc: "Posts categorized as: God"
+  url: /blog/category/god/index.html
