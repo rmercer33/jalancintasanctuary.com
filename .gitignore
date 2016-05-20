@@ -13,3 +13,4 @@ aws-keys.json
 .*
 *.swp
 !.gitignore
+project/profile/

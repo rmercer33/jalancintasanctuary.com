@@ -39,6 +39,3 @@ other projects.
 Please contact me directly if you notice any problems with the website or want to suggest a
 great idea for a new website feature or technically related project.
 
-
-
-
