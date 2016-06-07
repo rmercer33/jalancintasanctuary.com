@@ -1,6 +1,5 @@
 ---
 layout: unify-v4
-feature: profile
 ---
 
 <!--=== Profile ===-->
@@ -15,8 +14,6 @@ feature: profile
           <ul class="nav nav-justified nav-tabs">
             {% if page.author == "founders" %}
             <li class="active"><a data-toggle="tab" href="#profile">&nbsp;</a></li>
-            {% else %}
-            <li class="active"><a data-toggle="tab" href="#profile">Profile</a></li>
             {% endif %}
             {% if page.author == "kate" %}
               {% include profile/kate-tab.html %}
@@ -29,11 +26,12 @@ feature: profile
             {% endif %}
           </ul>
           <div class="tab-content">
+            {% if page.author == "founders" %}
             <div id="profile" class="profile-edit tab-pane fade in active">
               {{ content }}
               <br>
             </div>
-            {% if page.author == "kate" %}
+            {% elsif page.author == "kate" %}
               {% include profile/kate-tab-content.html %}
             {% elsif page.author == "rod" %}
               {% include profile/rod-tab-content.html %}
