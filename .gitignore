@@ -3,7 +3,7 @@ _templates/
 _sass/
 work/
 contact.html
-css/
+css/**
 icons/
 tags/
 node_modules/

@@ -1,0 +1,473 @@
+/* Add here all your css styles (customizations) */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  /* text-align: justify; */
+}
+
+.jcs-quote {
+  font-style: italic;
+}
+
+.jcs-quote p {
+  color: #00BB89;
+}
+
+.quote-v2 {
+  text-align: left;
+}
+
+.quote-v2 p:before {
+  color: #00BB89;
+}
+
+/* headings between solid, dashed, or dotted lines are h2's */
+/* but we set the size to match h1's */
+.jcs-page-heading h2 {
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.jcs-page-heading {
+  margin-top: 40px;
+}
+
+blockquote p {
+  font-size: 16px;
+}
+
+.jcs-tagline {
+  margin-top: 50px;
+  float: right;
+}
+
+@media (max-width: 991px) {
+  .jcs-tagline {
+    margin-top: 0;
+    float: none;
+  }
+}
+
+/* div.img-center img { */
+img-center img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo-footer {
+  border: none;
+}
+
+.content-md {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.sky-space-20 {
+  margin-bottom: 20px;
+}
+
+/* page header background images */
+/* width of image will be padding * 2 + width of content */
+/* background: url(../img/jcs/slider/home.jpg) no-repeat; */
+.jcs-home {
+  background: url(../img/jcs/slider/home-nosign.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 250px 0;
+}
+
+/* background: url(../img/jcs/slider/operators.jpg) no-repeat; */
+.jcs-contact {
+  background: url(../img/jcs/slider/globe.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
+}
+
+.jcs-villa {
+  background: url(../img/jcs/slider/your-villa.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
+}
+
+.jcs-thanks {
+  background: url(../img/jcs/slider/thankyou.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 380px 0;
+}
+
+/* background: url(../img/jcs/slider/gallery-land.jpg) no-repeat; */
+.jcs-gallery1 {
+  background: url(../img/jcs/slider/view-from-land.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
+}
+
+.jcs-gallery2 {
+  background: url(../img/jcs/slider/gallery-bali.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
+}
+
+.jcs-donation {
+  background: url(../img/jcs/slider/seedling1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
+}
+
+.jcs-skype {
+  background: url(../img/jcs/slider/saraswati.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
+}
+
+.jcs-teachings {
+  background: url(../img/jcs/slider/saraswati.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
+}
+
+.jcs-plans {
+  background: url(../img/jcs/slider/site-map.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
+}
+
+/* background: url(../img/jcs/slider/budha-line.jpg) no-repeat; */
+/* background: url(../img/jcs/slider/temple.jpg) no-repeat; */
+.jcs-land {
+  background: url(../img/jcs/slider/gallery-land.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
+}
+
+/* background: url(../img/jcs/slider/vision-option1.jpg) no-repeat; */
+.jcs-vision {
+  background: url(../img/jcs/slider/vision-option3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
+}
+
+.jcs-operation {
+  background: url(../img/jcs/slider/operation.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
+}
+
+.jcs-principle {
+  background: url(../img/jcs/slider/principle.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
+}
+
+/* background: url(../img/jcs/slider/FounderBios.jpg) no-repeat; */
+/* background: url(../img/jcs/slider/foundingfathers.jpg) no-repeat; */
+.jcs-members {
+  background: url(../img/jcs/slider/founding.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
+}
+
+.jcs-prof-members {
+  background: url(../img/jcs/slider/founding.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0;
+}
+
+.jcs-wol {
+  background: url(../img/jcs/slider/foundingfathers.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
+}
+
+/* background: url(../img/jcs/slider/news.jpg) no-repeat; */
+.jcs-news {
+  background: url(../img/jcs/slider/latest-news.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
+}
+
+.jcs-rod {
+  background: url(../img/jcs/slider/shadow.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0;
+}
+
+  /* background: url(../img/jcs/slider/leaf.jpg) no-repeat; */
+.jcs-sandy {
+  background: url(../img/jcs/slider/bamboo.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0;
+}
+
+.jcs-rick {
+  background: url(../img/jcs/slider/rick.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0;
+}
+
+.jcs-kate {
+  background: url(../img/jcs/slider/jesmry-banner.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0;
+}
+
+.jcs-profile {
+  background: url(../img/jcs/slider/tower.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0;
+}
+
+.jcs-error {
+  background: url(../img/jcs/slider/404-Error.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
+}
+
+.jcs-picture {
+  background: url(../img/jcs/slider/news.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
+}
+
+/* background: url(../img/jcs/slider/audio.jpg) no-repeat; */
+.jcs-download {
+  background: url(../img/jcs/slider/download.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
+}
+
+.jcs-breadcrumbs {
+  padding: 0;
+}
+
+.quote-v2 {
+  padding: 40px 10% 20px;
+}
+
+.quote-v2 p {
+}
+
+/* governs height of homepage image */
+/* .interactive-slider-v2 { */
+/*   padding: 200px 0; */
+/* } */
+
+/* governs the opacity of homepage image - 0.1 is 10% opaque */
+.interactive-slider-v2:after {
+  background: rgba(0,0,0,0.1);
+}
+
+.interactive-slider-v2 h1 {
+  color: #fff;
+  /* text-transform: uppercase; */
+}
+
+.interactive-slider-v2 p {
+  color: #fff;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+/*Navbar Menu*/
+.header-v4 .navbar-default .navbar-nav > li > a {
+  color: #687074;
+  font-size: 15px;
+  font-weight:400;
+  text-transform: lowercase;
+}
+
+blockquote,
+blockquote.hero {
+  border-left: none;
+}
+
+#acks {
+  background-color: rgba(177,175,184,0.4);
+}
+
+.standout {
+  background-color: rgba(37,109,167,0.2);
+  padding: 8px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  margin-bottom: 7px;
+}
+
+.jcs-pp {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.jcs-pp:hover {
+  background-color: rgba(37,109,167,0.2);
+}
+
+.mission {
+  /* background-color: rgba(37,109,167,0.2); */
+  border-radius: 5px;
+  margin-bottom: 3px;
+}
+
+.js-check {
+  color: blue;
+}
+
+.js-heart {
+  color: red;
+}
+
+.dollar {
+  color: #04BA8A;
+}
+
+.splash1 p {
+  margin-top: 10%;
+  font-size: 36px;
+  webkit-animation-delay: 1s;
+  moz-animation-delay: 1s;
+  animation-delay: 1s;
+  animation-duration: 3s;
+}
+
+.splash2 p {
+  font-size: 28px;
+  font-style: italic;
+  margin-top: 10%;
+  animation-duration: 3s;
+  webkit-animation-delay: 3s;
+  moz-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.splash3 p {
+  font-size: 28px;
+  font-style: italic;
+  margin-top: 10%;
+  animation-duration: 3s;
+  webkit-animation-delay: 5s;
+  moz-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.jcs-footer-logo {
+  padding-left: 0;
+}
+
+.pager.pager-v3 li > a:hover, 
+.pager.pager-v3 li > a:focus {
+  color: #fff;
+  background: #3498db;
+}
+
+.pager.pager-v3 li.done > a:focus,
+.pager.pager-v3 li.done > a:hover {
+  color: #CF1215;
+  background-color: rgba(52,152,219,0.5);
+  border-color: #CF1215;
+}
+
+.comment-section {
+  display: none;
+}
+
+article p {
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: .01rem;
+  margin-bottom: 30px;
+}
+
+.hide {
+  display:none;
+}
+
+.h2-prof {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold !important;
+}
+
+.h3-prof {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.blog-img-left {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.blog-img-right {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.bcenter {
+  text-align: center;
+}
+
+.jcs-center,
+.jcs-blog > figure > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.jcs-blog > blockquote {
+  text-align: center;
+  font-style: italic;
+}
+
+.jcs-blog > .separator-red,
+.jcs-blog > .separator {
+  text-align: center;
+  margin: 10px;
+}
+
+.jcs-blog > .separator-red i {
+  color: red;
+}
+
+.yml-excerpt {
+  margin-bottom: 20px;
+}
+
+.bg1 {
+  background-image: url(/public/img/blog/rick/img/gandhi-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg2 {
+  background-image: url(/public/img/blog/rick/img/shasta-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
