@@ -11,7 +11,7 @@ description: >
   News and Inspiration from Jalan Cinta Sanctuary in Ubud, Bali
 
 baseurl: "/"
-url: "http://jalancintasanctuary.com"
+url: "https://www.jalancintasanctuary.com"
 
 fbapi: fbapi-com
 env: prod

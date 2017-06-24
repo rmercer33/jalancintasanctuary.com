@@ -14,7 +14,7 @@
       <!-- Blog All Posts -->
       <div class="col-md-9">
         <h2>Posts by Category</h2>
-        {% for cat in {{site.categories}} %}
+        {% for cat in site.categories %}
           {% assign catId = cat | first %}
           {% assign catName = site.data.categories[catId].name %}
           <h3>{{catName}}</h3>

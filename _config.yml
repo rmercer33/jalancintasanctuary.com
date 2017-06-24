@@ -11,17 +11,17 @@ description: >
   News and Inspiration from Jalan Cinta Sanctuary in Ubud, Bali
 
 baseurl: "/"
-url: "http://jalancintasanctuary.net" 
+url: "https://www.jalancintasanctuary.com"
 
-fbapi: fbapi-net
-env: dev
+fbapi: fbapi-com
+env: prod
 
 paginate: 4
 paginate_path: "blog/post/page:num"
 
 # Build settings
-markdown: kramdown
-# markdown: pandoc
+# markdown: kramdown
+markdown: pandoc
 
 kramdown:
   auto_ids: true
