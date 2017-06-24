@@ -9,6 +9,6 @@ tags/
 node_modules/
 aws-keys.json
 .*
-*.swp
 !.gitignore
+!.ruby-version
 project/profile/
