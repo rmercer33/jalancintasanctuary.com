@@ -121,7 +121,7 @@ Acknowledgements:
   form part of his forthcoming book.
 * While I am listed as the author on this post, it was actually a collaborative 
   effort, which included Rick Mercer and Frances Robertson.
-* Our intention is to turn this most into an audio track for a forthcoming CD 
+* Our intention is to turn this post into an audio track for a forthcoming CD 
   titled, Seeds of Light.
 * Immense gratitude is offered to everyone who supported in the preparation of this post.
 
