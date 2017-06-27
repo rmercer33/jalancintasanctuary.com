@@ -1,0 +1,137 @@
+---
+layout: unify-v4
+title: "Connect With Us"
+id: contact
+social: contact
+banner: gmap
+form: contact
+---
+
+<div class="container content-md">
+  <div class="row margin-bottom-30">
+    <div class="col-md-8 mb-margin-bottom-30">
+      <div id="map" class="map map-box map-box-space margin-bottom-40"></div>
+
+      <p>
+        This map shows the location of the Sanctuary, Ubud town and the Ridge Walk.
+        Zoom in and press the "Satellite" button (in the upper right corner) for
+        a bird's eye view.
+      </p>
+      <p>
+        Use the form below to send us your questions and comments. We'll reply right away.
+      </p>
+      <p>
+        If you would like to subscribe to our mailing list, enter your name and email
+        address in the form on the footer of page, or here on the contact page. Watch
+        the Sanctuary project unfold by subscribing to our mailing list.
+      </p>
+      <div class="headline"><h2>Contact form</h2></div>
+
+      <form action="?" method="post" id="jcs-contact-form" class="sky-form contact-style" netlify>
+        <input type="hidden" name="destination" value="sandy">
+        <fieldset class="no-padding">
+          <label>Name <span class="color-red">*</span></label>
+          <div class="row sky-space-20">
+            <div class="col-md-7 col-md-offset-0">
+              <div>
+                <input type="text" required name="name" id="name" class="form-control">
+              </div>
+            </div>
+          </div>
+
+          <label>Email <span class="color-red">*</span></label>
+          <div class="row sky-space-20">
+            <div class="col-md-7 col-md-offset-0">
+              <div>
+                <input type="email" required name="email" id="email" class="form-control">
+              </div>
+            </div>
+          </div>
+
+          <label>Phone Number</label>
+          <div class="row sky-space-20">
+            <div class="col-md-7 col-md-offset-0">
+              <div>
+                <input type="tel" name="phone" id="phone" class="form-control">
+              </div>
+            </div>
+          </div>
+
+          <label>Message <span class="color-red">*</span></label>
+          <div class="row sky-space-20">
+            <div class="col-md-11 col-md-offset-0">
+              <div>
+                <textarea rows="8" required name="message" id="message" class="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row sky-space-20">
+            <div class="col-md-6">
+              {% comment %}
+              {% if site.env == "prod" %}
+                {% include captcha/captcha-prod.html %}
+              {% else %}
+                {% include captcha/captcha-dev.html %}
+              {% endif %}
+              {% endcomment %}
+            </div>
+            <div class="col-md-4">
+              <p><button type="submit" class="btn-u">Send Message</button></p>
+            </div>
+          </div>
+
+        </fieldset>
+
+        <div class="form-message">
+        </div>
+      </form>
+
+    </div><!--/col-md-8-->
+
+    <div class="col-md-4">
+      <!-- Contacts -->
+      <div class="headline"><h2>Our address</h2></div>
+      <address>
+        Jalan Cinta Sanctuary </br>
+        Ubud, Bali </br>
+        Indonesia, 80571 </br>
+        <br/>
+        <table class="table-striped table-condensed">
+          <tr>
+            <td>Sandy</td>
+            <td>+62 813 37 224788</td>
+          </tr>
+          <tr>
+            <td>Rod</td>
+            <td>+61 419 882 806</td>
+          </tr>
+          <tr>
+            <td>Kate</td>
+            <td>+61 410 046 148</td>
+          </tr>
+          <tr>
+            <td>Rick</td>
+            <td>+1 660 250 9344</td>
+          </tr>
+        </table>
+      </address>
+
+      <!-- Business Hours -->
+      <div class="headline"><h2>Subscribe</h2></div>
+        <p class="margin-bottom-20">
+          Keep up to date with JCS by subscribing to our mailing list.
+        </p>
+        <form id="jcs-subscribe-form" action="/subscribe" class="footer-subsribe" netlify>
+          <div class="input-group">
+            <input type="text" name="sname" required class="form-control" placeholder="Your Name">
+            <input type="email" name="semail" required class="form-control" placeholder="Email Address">
+            <p><button type="submit" class="btn-u">Subscribe</button></p>
+          </div>
+          <div class="submit-message">
+          </div>
+        </form>
+    </div><!--/col-md-4-->
+  </div>
+</div>
+
+
