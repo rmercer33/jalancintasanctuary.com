@@ -22,6 +22,7 @@ $(document).ready(function() {
 
   $("#jcs-subscribe-form" ).on("submit", function(e) {
     e.preventDefault();
+    console.log("#jcs-subscribe-form submitted");
 
     $(".submit-message")
       .html("<i class='fa fa-spin fa-spinner'></i>&nbsp;Working ...");
@@ -83,6 +84,7 @@ $(document).ready(function() {
 
   $("#jcs-contact-form" ).on("submit", function(e) {
     e.preventDefault();
+    console.log("#jcs-contact-form submitted");
 
     var form = $(this);
 
