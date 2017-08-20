@@ -6,6 +6,16 @@ body {
   /* text-align: justify; */
 }
 
+.jcs-site > li > a.disabled {
+  font-weight: bold;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.jcs-site > li > a {
+  text-align: left;
+}
+
 .jcs-quote {
   font-style: italic;
 }
@@ -131,6 +141,13 @@ img-center img {
 
 .jcs-teachings {
   background: url(../img/jcs/slider/saraswati.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
+}
+
+.jcs-cmi {
+  background: url(../img/jcs/slider/cmi.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
   padding: 200px 0;
