@@ -15,6 +15,11 @@
     {% include unify/navbar-v4.html %}
   </div>
   {% include slider/slider-v2.html %}
+  {% if page.subslider %}
+    <div class="subslider">
+      {{page.subslider}}
+    </div>
+  {% endif %}
 
   {% if page.title %}
     <div class="heading heading-v4 jcs-page-heading margin-bottom-20">

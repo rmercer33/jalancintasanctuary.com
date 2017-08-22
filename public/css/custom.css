@@ -6,6 +6,18 @@ body {
   /* text-align: justify; */
 }
 
+.subslider {
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.jcs-header {
+  text-align: center;
+  font-weight: 600;
+
+}
+
 .jcs-site > li > a.disabled {
   font-weight: bold;
   font-size: 1.2em;
@@ -14,6 +26,16 @@ body {
 
 .jcs-site > li > a {
   text-align: left;
+}
+
+.jcs-img-link {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.jcs-center {
+  text-align: center;
 }
 
 .jcs-quote {
@@ -81,11 +103,18 @@ img-center img {
 /* page header background images */
 /* width of image will be padding * 2 + width of content */
 /* background: url(../img/jcs/slider/home.jpg) no-repeat; */
-.jcs-home {
+.jcs-home1 {
   background: url(../img/jcs/slider/home-nosign.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
   padding: 250px 0;
+}
+
+.jcs-home {
+  background: url(../img/jcs/slider/ridge.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
 }
 
 /* background: url(../img/jcs/slider/operators.jpg) no-repeat; */
