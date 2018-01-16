@@ -2,7 +2,7 @@
 <meta property="og:url" content="{{site.url}}{{page.url | append: "index.html"}}" >
 {% if site.data.authors[page.author].social-images %}
 {% for image in site.data.authors[page.author].social-images %}
-<meta property="og:image" content="http://jalancintasanctuary.com{{image}}" >
+<meta property="og:image" content="https://www.jalancintasanctuary.com{{image}}" >
 {% endfor %}
 {% endif %}
 <meta property="og:type" content="website" >
