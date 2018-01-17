@@ -9,9 +9,11 @@ $(document).ready(function() {
   function initContactForm(id) {
     $("#" + id ).on("submit", function(e) {
       e.preventDefault();
-      console.log("#" + id + " submitted");
-
       var form = $(this);
+
+      //console.log("#" + e.currentTarget.id + " submitted");
+      //console.log("action: " + form.attr("action"));
+      //console.log("e: ", e);
 
       // clear submit message
       $(".form-message").html("<p>Please wait ...</p>");
@@ -55,10 +57,10 @@ $(document).ready(function() {
   "use strict";
 
   initContactForm("jcs-contact-form");
-  initContactForm("kate-contact-form");
-  initContactForm("rod-contact-form");
-  initContactForm("kate-contact-form");
-  initContactForm("rick-contact-form");
+  //initContactForm("kate-contact-form");
+  //initContactForm("rod-contact-form");
+  //initContactForm("sandy-contact-form");
+  //initContactForm("rick-contact-form");
 
 
   $("#jcs-subscribe-form" ).on("submit", function(e) {
