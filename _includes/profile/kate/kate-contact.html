@@ -1,0 +1,61 @@
+<form class="sky-form" id="kate-contact-form" netlify>
+  <input type="hidden" name="destination" value="{{page.author}}">
+  <dl class="dl-horizontal">
+    <dt>Name</dt>
+    <dd>
+      <section>
+        <label class="input">
+          <i class="icon-append fa fa-user"></i>
+          <input type="text" required placeholder="Your Name" name="name">
+          <b class="tooltip tooltip-bottom-right">Please enter your name</b>
+        </label>
+      </section>
+    </dd>
+    <dt>Email address</dt>
+    <dd>
+      <section>
+        <label class="input">
+          <i class="icon-append fa fa-envelope"></i>
+          <input type="email" required placeholder="Email address" name="email">
+          <b class="tooltip tooltip-bottom-right">So I can respond to you</b>
+        </label>
+      </section>
+    </dd>
+    <dt>Phone Number</dt>
+    <dd>
+      <section>
+        <label class="input">
+          <i class="icon-append fa fa-mobile"></i>
+          <input type="tel" id="phone" name="phone" placeholder="phone number">
+          <b class="tooltip tooltip-bottom-right">Optionally provide your phone number</b>
+        </label>
+      </section>
+    </dd>
+    <dt>Enter your message</dt>
+    <dd>
+      <section>
+        <label class="textarea">
+          <textarea rows="8" required placeholder="Enter your message"
+            name="message" id="message" ></textarea>
+          <b class="tooltip tooltip-bottom-right">Enter your message</b>
+        </label>
+      </section>
+    </dd>
+  </dl>
+  <div class="row sky-space-20">
+    {% comment %}
+    <div class="col-md-5">
+      {% if site.env == "prod" %}
+        {% include captcha/captcha-prod.html %}
+      {% else %}
+        {% include captcha/captcha-dev.html %}
+      {% endif %}
+    </div>
+    {% endcomment %}
+    <div class="col-md-3">
+      <p><button type="submit" class="btn-u">Send Message</button></p>
+    </div>
+    <div class="col-md-4 form-message"></div>
+  </div>
+</form>
+
