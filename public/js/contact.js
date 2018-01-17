@@ -5,7 +5,61 @@
 /*eslint no-console:0 */
 
 $(document).ready(function() {
+
+  function initContactForm(id) {
+    $("#" + id ).on("submit", function(e) {
+      e.preventDefault();
+      console.log("#" + id + " submitted");
+
+      var form = $(this);
+
+      // clear submit message
+      $(".form-message").html("<p>Please wait ...</p>");
+
+      if (location.port === "3000") {
+        $(".form-message")
+          .addClass("text-success")
+          .html("<p>Thank you Rick. You have made contact. NOT!</p>");
+
+        return false;
+      }
+
+      var target = $(e.target);
+      var data = {
+        destination: $(target).find("[name='destination']").val(),
+        name: $(target).find("[name='name']").val(),
+        email: $(target).find("[name='email']").val(),
+        phone: $(target).find("[name='phone']").val(),
+        message: $(target).find("[name='message']").val()
+      };
+
+      $.post(form.attr("action"), form.serialize())
+        .done(function() {
+          $(".form-message")
+            .removeClass("text-danger")
+            .addClass("text-success")
+            .html("<p><i class='fa fa-check'></i> Thank you " 
+              + data.name + ". You have made contact.</p>");
+          form[0].reset();
+        })
+        .fail(function(e) {
+          $(".form-message")
+            .removeClass("text-success")
+            .addClass("text-danger")
+            .html("<p><i class='fa fa-bolt'></i> There was an error sending your request,"
+              + " please check if your email address is correct.</p>");
+        });
+    });
+  }
+
   "use strict";
+
+  initContactForm("jcs-contact-form");
+  initContactForm("kate-contact-form");
+  initContactForm("rod-contact-form");
+  initContactForm("kate-contact-form");
+  initContactForm("rick-contact-form");
+
 
   $("#jcs-subscribe-form" ).on("submit", function(e) {
     e.preventDefault();
@@ -36,50 +90,6 @@ $(document).ready(function() {
    */
   });
 
-  $("#jcs-contact-form" ).on("submit", function(e) {
-    e.preventDefault();
-    console.log("#jcs-contact-form submitted");
-
-    var form = $(this);
-
-    // clear submit message
-    $(".form-message").html("<p>Please wait ...</p>");
-
-    if (location.port === "3000") {
-      $(".form-message")
-        .addClass("text-success")
-        .html("<p>Thank you Rick. You have made contact. NOT!</p>");
-
-      return false;
-    }
-
-    var target = $(e.target);
-    var data = {
-      destination: $(target).find("[name='destination']").val(),
-      name: $(target).find("[name='name']").val(),
-      email: $(target).find("[name='email']").val(),
-      phone: $(target).find("[name='phone']").val(),
-      message: $(target).find("[name='message']").val()
-    };
-
-    $.post(form.attr("action"), form.serialize())
-      .done(function() {
-        $(".form-message")
-          .removeClass("text-danger")
-          .addClass("text-success")
-          .html("<p><i class='fa fa-check'></i> Thank you " 
-            + data.name + ". You have made contact.</p>");
-        form[0].reset();
-      })
-      .fail(function(e) {
-        $(".form-message")
-          .removeClass("text-success")
-          .addClass("text-danger")
-          .html("<p><i class='fa fa-bolt'></i> There was an error sending your request,"
-            + " please check if your email address is correct.</p>");
-      });
-
-  });
 
 });
 
