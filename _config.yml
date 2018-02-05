@@ -3,7 +3,7 @@ exclude: [pandoc, project, work, vim, contact_.html, cdn, node_modules, aws-keys
 gems: [ 'jekyll-paginate', 'jekyll-pandoc-multiple-formats' ]
 
 title: Jalan Cinta Sanctuary
-email: love@thewayoflove.com
+email: jalancintasancutary@gmail.com
 webmaster: "rmercer33@gmail.com (Rick Mercer)"
 editor: "jalancintasanctuary@gmail.com (Sandy Button)"
 
