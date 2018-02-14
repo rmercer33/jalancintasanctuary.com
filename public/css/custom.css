@@ -1,5 +1,9 @@
 /* Add here all your css styles (customizations) */
 
+:root {
+  --link-color: #98040C;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -346,7 +350,7 @@ img#logo-header {
 
 /*Navbar Menu*/
 .header-v4 .navbar-default .navbar-nav > li > a {
-  color: #687074;
+  color: var(--link-color);
   font-size: 15px;
   font-weight:400;
   text-transform: lowercase;
