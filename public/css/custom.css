@@ -87,6 +87,10 @@ img-center img {
   margin-right: auto;
 }
 
+img#logo-header {
+  width: 300px;
+}
+
 #logo-footer {
   border: none;
 }
