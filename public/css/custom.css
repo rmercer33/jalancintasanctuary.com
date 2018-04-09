@@ -19,7 +19,11 @@ body {
 .jcs-header {
   text-align: center;
   font-weight: 600;
+}
 
+/* honey pot form field - don't show it */
+.sky-form .input input.jcs-friend-detect {
+  display: none;
 }
 
 .jcs-site > li > a.disabled {
