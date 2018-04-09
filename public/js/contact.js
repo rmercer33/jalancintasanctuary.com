@@ -29,7 +29,7 @@ $(document).ready(function() {
       var target = $(e.target);
       var data = {
         destination: $(target).find("[name='destination']").val(),
-        name: $(target).find("[name='name']").val(),
+        name: $(target).find("[name='kname']").val(),
         email: $(target).find("[name='email']").val(),
         phone: $(target).find("[name='phone']").val(),
         message: $(target).find("[name='message']").val()

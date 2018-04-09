@@ -22,6 +22,7 @@ body {
 }
 
 /* honey pot form field - don't show it */
+.sky-form input.jcs-friend-detect,
 .sky-form .input input.jcs-friend-detect {
   display: none;
 }
