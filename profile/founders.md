@@ -5,9 +5,9 @@ permalink: /profile/founders/
 author: founders
 id: prof-members
 social: members
-
 ---
 
+{% comment %}
 ## Founding Members {#fm .h2-prof .margin-bottom-20}
 
 *Jalan Cinta Sanctuary* and all that will occur here is something truly unique.
@@ -19,3 +19,4 @@ Here you can find out a little more about our journeys; our professional
 profiles and what our passion is as we join together to birth Jalan Cinta
 Sanctuary.
 
+{% endcomment %}
