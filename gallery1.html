@@ -25,6 +25,7 @@ social: gallery1
   {% assign info = {{info | append: ";Garden space with a villa in the background.:A communal gathering room. "}} %}
   {% assign info = {{info | append: ";Gathering spaces will emerge here.:Dancing on a pool deck, then dive into our infinity pool.:Boys being boys as they explore a path down to the river, meditation decks and message huts."}} %}
   {% assign info = {{info | append: ";meditation decks, tranquil massage and meditation spaces all offered close to the river:pointing out the natural spring – soon to become a feature!"}} %}
+  {% assign info = {{info | append: ";villa from above:villa from garden:villa from garden"}} %}
 
   {% assign images = "the-blocks.jpg:lands.jpg" %}
   {% assign images = {{images | append: ",land-outline.jpg:site-map-with-callouts.jpg"}} %}
@@ -32,6 +33,7 @@ social: gallery1
   {% assign images = {{images | append: ",land2s.jpg:land4s.jpg"}} %}
   {% assign images = {{images | append: ",land-groups.jpg:group-dances.jpg:land-group2s.jpg"}} %}
   {% assign images = {{images | append: ",down-to-river.jpg:spring.jpg"}} %}
+  {% assign images = {{images | append: ",xx-villa-birds-eye.jpg:villa-from-garden.jpg:villa-from-garden2.jpg"}} %}
 
   <!--Include fancybox passing parameters-->
   {% include gallery/fancybox.html desc=desc images=images cdn=cdn i=info %}

@@ -1,0 +1,1 @@
+﻿positionForPages[13]={page:13,positions:[{word:"•",left:0.552222,top:0.110876,width:0.006297,height:0.038263},{word:"-",left:0.312222,top:0.301083,width:0.004074,height:0.037110},{word:"•",left:0.215185,top:0.385438,width:0.004815,height:0.035362},{word:"•",left:0.194074,top:0.354686,width:0.007037,height:0.038263}]};

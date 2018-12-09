@@ -1,0 +1,1 @@
+﻿positionForPages[22]={page:22,positions:[{word:"/'",left:0.192918,top:0.700647,width:0.008484,height:0.010437}]};

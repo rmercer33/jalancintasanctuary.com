@@ -18,8 +18,15 @@ social: flyer
   <!--Filename of gallery images-->
   <!--NOTE: See above for making proper assignments-->
 
-  {% assign images = "01-front.jpg:02-TOC.jpg:03-JCS&WOL.jpg" %}
-  {% assign images = {{images | append: ",04-Bali.jpg:05-Ubud.jpg"}} %}
+  {% assign images = "01-front.jpg:02-TOC.jpg" %}
+  {% assign images = {{images | append: ",03-JCS&WOL.jpg:04-Bali.jpg"}} %}
+  {% assign images = {{images | append: ",05-Ubud.jpg:06-home-for-heart.jpg"}} %}
+  {% assign images = {{images | append: ",07-be-part-of-something.jpg:08-features.jpg"}} %}
+  {% assign images = {{images | append: ",09-features.jpg:10-features.jpg"}} %}
+  {% assign images = {{images | append: ",11-rhythm.jpg:12-your-opportunity.jpg"}} %}
+  {% assign images = {{images | append: ",13-villa-exterior.jpg:14-villa-interior.jpg"}} %}
+  {% assign images = {{images | append: ",15-community.jpg:16-next-steps.jpg"}} %}
+  {% assign images = {{images | append: ",17-back.jpg"}} %}
 
   {% comment %}
   {% assign images = {{images | append: ",ridge-grasss.jpg:ridge-grass3s.jpg:ridge-grass4s.jpg"}} %}
@@ -36,14 +43,24 @@ social: flyer
   {% assign images = {{images | append: ",mt-agungs.jpg:mt-baturs.jpg:rice-fieldss.jpg"}} %}
   {% assign images = {{images | append: ",river3s.jpg:temple2s.jpg"}} %}
   {% assign images = {{images | append: ",mforrests.jpg:monkeys.jpg:sunset-ws.jpg"}} %}
-  {% assign images = {{images | append: ",gallery-food.jpg:water-temple.jpg:"}} %}
-  {% endcomment %}
+  {% assign images = {{images | append: ",gallery-food.jpg:water-temple.jpg"}} %}
 
   {% assign info = "The Wos River in Ubud:Walk from Ubud to the Sanctuary:Home of the 'Miracle Walk'" %}
   {% assign info = {{info | append: ";The Ridge Walk, an icon in Ubud.:Preparing for work!"}} %}
   {% assign info = {{info | append: ";Harvesting for grass roofs.:Preparing grass for transport.:Off to market."}} %}
   {% assign info = {{info | append: ";Some sites along the walk.:More sites along the walk."}} %}
   {% assign info = {{info | append: ";Mt Agung, just outside our door.:There she is again, Mt Agung.:View from the end of the street."}} %}
+  {% endcomment %}
+
+  {% assign info = ":" %}
+  {% assign info = {{info | append: ";:"}} %}
+  {% assign info = {{info | append: ";:"}} %}
+  {% assign info = {{info | append: ";:"}} %}
+  {% assign info = {{info | append: ";:"}} %}
+  {% assign info = {{info | append: ";:"}} %}
+  {% assign info = {{info | append: ";:"}} %}
+  {% assign info = {{info | append: ";:"}} %}
+  {% assign info = {{info | append: ";"}} %}
 
   {% comment %}
   {% assign info = {{info | append: ";End of the day.:Anyone for a motorbike tour of the island?"}} %}

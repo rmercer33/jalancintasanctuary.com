@@ -58,5 +58,11 @@
 <link rel="stylesheet" href="/public/css/theme-colors/blue.css" />
 {% endcomment %}
 
+{% if page.id == "flipbook" %}
+<link rel="stylesheet" href="/public/css/flipbook.css">
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="js/fbscript.js"></script>
+{% endif %}
+
 {% include analytics/google.js %}
 

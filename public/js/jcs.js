@@ -59,6 +59,7 @@ var jcs = (function () {
   return {
     //Basic Map
     initMap: function () {
+      return;
       var map = new GMaps({
         div: "#map",
         zoom: 9,              //9-view all of Bali, 17-zoomed into sanctuary

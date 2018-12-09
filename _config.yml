@@ -36,7 +36,7 @@ pandoc:
   skip: true
   impose: false
   output: ./pandoc
-  flags: '--smart'
+  xflags: '--smart'
   site_flags: '--toc'
   outputs:
     pdf: '--latex-engine=pdflatex'

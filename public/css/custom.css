@@ -167,6 +167,13 @@ img#logo-header {
   padding: 200px 0;
 }
 
+.jcs-flyer {
+  background: url(../img/jcs/slider/flyer-banner.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
+}
+
 .jcs-donation {
   background: url(../img/jcs/slider/seedling1.jpg) no-repeat;
   background-size: cover;
@@ -182,7 +189,7 @@ img#logo-header {
 }
 
 .jcs-teachings {
-  background: url(../img/jcs/slider/saraswati.jpg) no-repeat;
+  background: url(../img/jcs/slider/plumeria.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
   padding: 200px 0;
