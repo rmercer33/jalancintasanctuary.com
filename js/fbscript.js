@@ -212,4 +212,4 @@ function detectAndGoVersion(loadType){
     swfobject.createCSS("#flashContent", "display:block;text-align:left;");
 	}	 
 }
-detectAndGoVersion();
+detectAndGoVersion(2);

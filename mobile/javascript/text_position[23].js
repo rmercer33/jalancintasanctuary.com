@@ -1,1 +1,1 @@
-﻿positionForPages[23]={page:23,positions:[{word:"•",left:0.430906,top:0.577181,width:0.004458,height:0.034011},{word:"•",left:0.179792,top:0.738364,width:0.002229,height:0.014349}]};
+﻿positionForPages[23]={page:23,positions:[{word:"• ",left:0.430906,top:0.577181,width:0.007986,height:0.034011},{word:"• ",left:0.369985,top:0.613796,width:0.004658,height:0.008238},{word:"• ",left:0.179792,top:0.738364,width:0.003993,height:0.014349}]};

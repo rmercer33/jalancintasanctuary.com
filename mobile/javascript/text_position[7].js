@@ -1,1 +1,1 @@
-﻿positionForPages[7]={page:7,positions:[{word:"()",left:0.599408,top:0.162174,width:0.016290,height:0.029731}]};
+﻿positionForPages[7]={page:7,positions:[{word:"() ",left:0.599408,top:0.162174,width:0.022405,height:0.029731},{word:"u ",left:0.592373,top:0.187543,width:0.046594,height:0.038263}]};
