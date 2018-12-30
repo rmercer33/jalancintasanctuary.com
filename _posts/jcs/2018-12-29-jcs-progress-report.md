@@ -37,8 +37,9 @@ was obtained.
 As the Sanctuary is located a little way off the road and accessed via a
 3 meter wide driveway, one of the first things that needed to happen was
 to create room for this driveway. This meant our beautiful local
-families demolished their ancient kitchen that was across the path of
-the drvieway and reconstructed it on a different section of their land.
+family demolished their ancient kitchen and reconstructed it on a
+different section of their land. This allowed driveway access into the
+property.
 
 {% comment %}
 ![](/public/img/blog/sandy/img/fencing.jpg)
