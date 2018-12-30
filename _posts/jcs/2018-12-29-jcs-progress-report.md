@@ -25,14 +25,14 @@ offering a short summary of Jalan Cinta Sanctuary and contact us to find out mor
 
 Below is a summary of items to date:
 
-##  All building permits obtained
+##  All Building Permits Obtained
 
 It was an interesting process watching the legal team go through design
 and development hoops, reviews and redrafts, until finally the all clear
 was given and our building permit (what they call an IMB in Indonesia)
 was obtained.
 
-##  Clearing the way
+##  Clearing the Way
 
 As the Sanctuary is located a little way off the road and accessed via a
 3 meter wide driveway, one of the first things that needed to happen was
@@ -44,7 +44,7 @@ the drvieway and reconstructed it on a different section of their land.
 ![](/public/img/blog/sandy/img/fencing.jpg)
 {% endcomment %}
 
-## Time for a ceremony
+## Time for a Ceremony
 
 In typical Bali fashion, before any building can begin we ask permission
 from the gods. Representatives from the local village, our local family
@@ -53,7 +53,7 @@ and project.
 
 ![](/public/img/blog/sandy/img/blessing.jpg)
 
-## Building a bridge
+## Building a Bridge
 
 It still makes me laugh even today that our first step in building was
 the development of a small bridge over the local waterway that supplies
@@ -64,7 +64,7 @@ thing we needed to do was “build a bridge and get over it”.
 
 ## Limestone Driveway Base
 
-Next step was placement of our limestone base for the driveway. Or, as a
+Next step was placement of a limestone base for the driveway. Or, as a
 friend shared, what looks like an, ‘oatmeal’ driveway into the
 Sanctuary.
 
@@ -72,17 +72,17 @@ Sanctuary.
 
 ## Fencing
 
-Fencing the boundary was next. While we have a traditional ‘walled’
-fence on the villa section, to ensure privacy. The rest of the property
-has wire panel fencing, which will allow lots of passion fruit to be
-grown on it, therefore creating a much more natural look and feel.
+Fencing the boundary was next! While we have a traditional ‘walled’
+fence for the villa section to ensure privacy, the rest of the property
+has wire panel fencing which will foster a natural look and feel when
+draped in passion fruit vines.
 
 ![](/public/img/blog/sandy/img/boundary-fence.jpg)
 
-## Clearing and Digging a well
+## Clearing and Digging a Well
 
-Next we cleared the block and dug our deep water well, (called a
-‘sumor boar’ in Bali). 
+Next we cleared the block and dug our deep water well; called a
+‘sumor boar’ in Bali.
 
 ![](/public/img/blog/sandy/img/clearing.jpg)
 
@@ -99,13 +99,13 @@ of the property.
 
 We elected to put a second story on this building, which will house 2 x
 backpacker style accommodation options. These rooms will allow us to
-cater for all budgets for accommodation.
+cater to all budgets for accommodation.
 
 ![](/public/img/blog/sandy/img/service-room-day.jpg)
 
 ![](/public/img/blog/sandy/img/service-room-night.jpg)
 
-## Next step, Villas!
+## Next Step, Villas!
 
 Join us and become part of this supportive community of friends.
 
