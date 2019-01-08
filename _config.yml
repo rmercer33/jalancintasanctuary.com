@@ -1,6 +1,6 @@
 exclude: [pandoc, project, work, vim, contact_.html, cdn, node_modules, aws-keys.json, package.json, Gruntfile.js]
 
-gems: [ 'jekyll-paginate', 'jekyll-pandoc-multiple-formats' ]
+plugins: [ 'jekyll-paginate', 'jekyll-pandoc-multiple-formats' ]
 
 title: Jalan Cinta Sanctuary
 email: jalancintasancutary@gmail.com
