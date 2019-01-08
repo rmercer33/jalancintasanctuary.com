@@ -59,7 +59,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (>= 2.4.3)
+  jekyll (~> 3.3.1)
   jekyll-paginate
   jekyll-pandoc-multiple-formats!
 
